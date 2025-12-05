@@ -1,0 +1,2557 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://123axderg.github.io/Medmed/%E5%B1%80%E8%A7%A3_for_mkdocs/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>局解 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#for-mkdocs-2025-11-14" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              局解
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/123axderg/Medmed" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    123axderg/Medmed
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  各论
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/123axderg/Medmed" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    123axderg/Medmed
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    各论
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    各论
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    局解
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    局解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸前区腋区浅层、股前内侧区浅层
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸前区腋区深层、股前内侧区深层
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        臂前区、肘窝、前臂前区、小腿前外侧
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        腕部手掌足背
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        上下肢后区1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        上下肢后区2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        颈部1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        颈部2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        颈部3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸部1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸部2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        腹前外侧壁
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结肠上区
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结肠下区
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸前区腋区浅层、股前内侧区浅层
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸前区腋区深层、股前内侧区深层
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        臂前区、肘窝、前臂前区、小腿前外侧
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        腕部手掌足背
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        上下肢后区1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        上下肢后区2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        颈部1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        颈部2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        颈部3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸部1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胸部2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        腹前外侧壁
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结肠上区
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结肠下区
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="for-mkdocs-2025-11-14">局部解剖学for-mkdocs-2025-11-14</h1>
+<h2 id="_1">胸前区腋区浅层、股前内侧区浅层</h2>
+<p><strong>试述腋腔的境界。</strong></p>
+<ul>
+<li>由一顶、一底、和四壁组成</li>
+<li>顶：腋窝上口<ul>
+<li>锁骨中1/3</li>
+<li>第一肋外缘</li>
+<li>肩胛骨上缘</li>
+</ul>
+</li>
+<li>底：朝向外下，由皮肤，浅筋膜，腋筋膜共同构成</li>
+<li>壁：有内侧壁、外侧壁、前壁和后壁<ul>
+<li>内侧壁：前锯肌、上位四个肋骨、肋间肌</li>
+<li>外侧壁：肱二头肌长短头、喙肱肌、肱骨的结节间沟</li>
+<li>前壁：胸大肌、胸小肌、锁骨下肌、锁胸筋膜</li>
+<li>后壁：大圆肌、背阔肌、肩胛骨</li>
+</ul>
+</li>
+</ul>
+<p><strong>乳房悬韧带</strong></p>
+<p>乳腺和输乳管周围的纤维束，连于皮肤和浅筋膜深层之间，称为Cooper韧带</p>
+<ul>
+<li>酒窝征</li>
+</ul>
+<p><strong>思考乳腺癌的淋巴转移途径。</strong></p>
+<p>淋巴引流</p>
+<ul>
+<li>外侧部和中央部淋巴管：注入腋淋巴结前群</li>
+<li>上部淋巴管：注入腋淋巴结尖群和锁骨上淋巴结</li>
+<li>内侧淋巴结：注入胸骨旁淋巴结，与对侧吻合</li>
+<li>内下淋巴结：注入膈上淋巴结，并与腹前壁及膈下淋巴管相吻合，从而间接地与肝上面的淋巴管交通</li>
+<li>深部淋巴结：注入胸肌间淋巴结（Rotter淋巴结）或者直接注入腋淋巴结尖群</li>
+</ul>
+<p><strong>锁胸筋膜的位置和通过的结构。</strong></p>
+<ul>
+<li>位于胸大肌的深面，锁胸筋膜是位于喙突、锁骨下肌、胸小肌上缘之间的深筋膜，有头静脉，胸肩峰血管和胸外侧神经穿过</li>
+</ul>
+<p><strong>三边孔、四边孔的境界和通过的结构</strong></p>
+<p>三边孔</p>
+<ul>
+<li>上界：小圆肌、肩胛下肌</li>
+<li>下界：大圆肌</li>
+<li>外侧界：肱三头肌长头</li>
+<li>内有：旋肩胛动静脉</li>
+</ul>
+<p>四边孔</p>
+<ul>
+<li>上界：小圆肌、肩胛下肌</li>
+<li>下界：大圆肌</li>
+<li>内侧界：肱三头肌长头</li>
+<li>外侧界：肱骨外科颈</li>
+<li>内有：旋肱后动静脉和腋神经</li>
+</ul>
+<p><img alt="image-20251115130422003" src="/images/image-20251115130422003.png" /></p>
+<p><strong>试述大隐静脉的注入部位、主要属支及其收集范围。</strong></p>
+<ul>
+<li>大隐静脉是全身最长的浅静脉，约70~80cm，起自足背静脉弓的内侧端，走行在内踝前方，股骨内侧髁后方约2cm处，耻骨结节外下方穿隐静脉裂孔注入股静脉，主要收集<strong>足、小腿和大腿内侧部以及大腿前部浅层</strong>的静脉血</li>
+<li>属支</li>
+<li>旋髂浅静脉</li>
+<li>腹壁浅静脉</li>
+<li>阴部外静脉</li>
+<li>股内侧浅静脉</li>
+<li>股外侧浅静脉</li>
+<li>临床意义：大隐静脉在内踝前方的位置表浅固定，临床上常在此行大隐静脉切开以进行输液或注射</li>
+</ul>
+<h2 id="_2">胸前区腋区深层、股前内侧区深层</h2>
+<p><strong>试述腋动脉的分段，各段有哪些分支？</strong></p>
+<ul>
+<li>
+<p>以胸小肌标志，分为三段</p>
+</li>
+<li>
+<p>第1段：第1肋外缘至胸小肌上缘</p>
+</li>
+<li>第2段：被胸小肌覆盖</li>
+<li>
+<p>第3段：胸小肌下缘至大圆肌肌腱和背阔肌下缘</p>
+</li>
+<li>
+<p>分支</p>
+</li>
+<li>
+<p>胸上动脉</p>
+</li>
+<li>
+<p>胸肩峰动脉</p>
+</li>
+<li>胸外侧动脉</li>
+<li>肩胛下动脉<ul>
+<li>分为旋肩胛动脉和胸背动脉</li>
+</ul>
+</li>
+<li>旋肱前动脉</li>
+<li>旋肱后动脉（更粗）</li>
+</ul>
+<p><img alt="image-20251114125235030" src="/images/image-20251114125235030.png" /></p>
+<p><strong>试述臂丛的三个束的位置及主要分支。</strong></p>
+<p><img alt="image-20251114125308144" src="/images/image-20251114125308144.png" /></p>
+<p><strong>试述正中神经、肌皮神经、尺神经、桡神经和腋神经的支配情况及其损伤表现。</strong></p>
+<p><strong>正中神经</strong></p>
+<ul>
+<li>
+<p>正中神经主要支配前臂的大部分屈肌、旋前肌和一部分手部肌肉（除拇收肌外的大鱼际肌和第1、2蚓状肌）</p>
+</li>
+<li>
+<p>在手掌面：正中神经经腕管进入手掌并分支</p>
+</li>
+<li>
+<p><strong>返支</strong>短而粗，在屈肌支持带的深面或者远侧发自正中神经外侧缘，或者第一指掌侧总神经，勾绕拇短屈肌内侧缘并沿其表面穿行拇短屈肌和拇短展肌之间，分支支配<strong>拇短屈肌、拇短展肌、拇对掌肌</strong></p>
+</li>
+<li>
+<p>指掌侧总神经共3支，分支支配<strong>第1、2蚓状肌</strong></p>
+</li>
+<li>
+<p>损伤后，<strong>拇指对掌功能障碍，手部桡侧半感觉障碍</strong>，呈“猿手”畸形，大鱼际肌萎缩，<strong>在臂部损伤时</strong>可累及全部分支，表现为<strong>前臂不能旋前，屈腕无力</strong></p>
+</li>
+<li>正中神经极易在前臂和腕部外伤时被损伤。<strong>“旋前肌综合征”、“腕管综合征”</strong></li>
+</ul>
+<p><strong>肌皮神经</strong></p>
+<ul>
+<li>由外侧束发出，向外斜穿过<strong>喙肱肌，在肱二头肌与肱肌</strong>之间下行，发出肌支支配这些肌（<strong>前群臂肌</strong>）</li>
+<li><strong>前臂外侧皮神经</strong>：支配前臂外侧皮肤感觉</li>
+<li>损伤可引起前臂屈曲无力，肌肉萎缩和前臂前侧麻木</li>
+</ul>
+<p><strong>尺神经</strong></p>
+<ul>
+<li>在掌面：浅支分布于手掌浅面尺侧1/3，深支主要为肌支，支配小鱼际诸肌、骨间肌、第3、4蚓状肌、<strong>拇收肌</strong>、拇短屈肌深头</li>
+<li>在前臂：发出肌支支配<strong>尺侧腕屈肌和指深屈肌尺侧半</strong></li>
+<li>损伤后，<strong>拇指不能内收，余指不能收展</strong>，不能屈小指和无名指，屈腕、收腕障碍，<strong>手部尺侧感觉障碍</strong>，由于<strong>小鱼际萎缩而平坦</strong>，第3、4蚓状肌及骨间肌萎缩，指伸肌使<strong>第4、5指的掌指关节过伸，指屈肌使中、末指节屈曲</strong>，形成<strong>“爪形手”</strong></li>
+<li><strong>前臂内侧皮神经支配前臂尺侧感觉</strong></li>
+</ul>
+<p><strong>桡神经</strong></p>
+<ul>
+<li>经过肱三头肌<strong>长头与内侧头之间沿桡神经沟下行</strong>，<strong>支配肱三头肌</strong>，肱骨中、下1/3交界处穿经外侧肌间隔，至肱桡肌和肱肌之间，在此处分为浅、深二终支，肱骨中段骨折时，桡神经极其容易受到损伤</li>
+<li><strong>桡神经深支</strong>也称为<strong>骨间后神经</strong>，从桡神经主干分出后，深支穿过<strong>旋后肌</strong>，进入前臂后区，<strong>行走于前臂后群浅、深层伸肌之间，</strong>与<strong>骨间后动脉</strong>伴行，桡神经深支支配除了<strong>肱桡肌</strong>和<strong>桡侧腕长伸肌</strong>（由桡神经主干在分叉前支配）以外的<strong>所有</strong>前臂伸肌</li>
+<li><strong>桡神经浅支</strong>主要是一个感觉神经，从桡神经主干分出后，<strong>在肱桡肌的深面下行</strong>，负责手背桡侧半（拇指侧）以及桡侧两个半手指（拇指、食指、以及中指桡侧）<strong>近节指背的皮肤感觉</strong></li>
+<li>皮支，在腋窝处发出<strong>臂后皮神经，分布于臂后面皮肤；在桡神经沟内发出前臂后皮神经，分布于前臂背面皮肤</strong></li>
+<li>肌支，<strong>支配肱三头肌、肱桡肌和桡侧腕长伸肌、肘肌</strong></li>
+<li>损伤后，<strong>前臂伸肌瘫痪，抬前臂时腕下垂</strong>，第1、2掌骨间背面皮肤感觉障碍</li>
+</ul>
+<p><strong>试述腋淋巴结的分群及回流途径，思考乳腺癌的淋巴转移途径。</strong></p>
+<p><img alt="image-20251114134445575" src="/images/image-20251114134445575.png" /></p>
+<p><strong>试述阔筋膜的特点及形成的结构；</strong></p>
+<p>股部深筋膜称为阔筋膜，坚韧而致密，包裹整个大腿</p>
+<ul>
+<li>
+<p>髂胫束：起自髂嵴前部的外侧缘，下端附着于胫骨外侧髁</p>
+</li>
+<li>
+<p>隐静脉裂孔：为腹股沟韧带中内1/3交界处下方一横指处阔筋膜形成的一个卵圆形凹陷</p>
+</li>
+</ul>
+<p><strong>试述肌腔隙和血管腔隙的境界和内容；</strong></p>
+<ul>
+<li>位置：位于腹股沟韧带与髋骨之间的腹股沟后隙，是腹、盆腔与股前区的重要通道，被髂耻弓分为两部分</li>
+<li><strong>肌腔隙</strong>：前界为腹股沟韧带外侧部，后外界为髂骨，内侧界为髂耻弓，该腔隙内有髂腰肌、股神经和股外侧皮神经通过</li>
+<li><strong>血管腔隙：</strong>前界为腹股沟韧带的内侧部，后内界为耻骨肌筋膜和耻骨梳韧带，内侧界为腔隙韧带，后外界为髂耻弓，内有股鞘及其包绕的股动脉、股静脉和股管通过</li>
+<li><strong>股鞘⭐️：为腹横筋膜及髂筋膜向下延续，包绕股动静脉上段和股管的筋膜鞘</strong>，位于腹股沟韧带内侧半和阔筋膜的深面，呈长约3～4cm的漏斗状。鞘内由二纵隔将它分为外中内三格，外侧格容纳股动脉；中间隔容纳股静脉；内侧格形成股管，内有股深淋巴结和脂肪组织</li>
+</ul>
+<p><img alt="image-20251115132257852" src="/images/image-20251115132257852.png" /></p>
+<p><strong>试述股三角的境界和内容；</strong></p>
+<p>位于股前内侧区的上1/3部，由肌围成一个底向上、尖向下的倒三角凹陷区域，其尖向下接续收肌管</p>
+<ul>
+<li>上界：腹股沟韧带</li>
+<li>下外界：<strong>缝匠肌内侧缘</strong></li>
+<li>下内界：长收肌内侧缘</li>
+<li><strong>前壁：阔筋膜和筛筋膜</strong></li>
+<li><strong>后壁：髂腰肌、耻骨肌、长收肌</strong></li>
+</ul>
+<p>内容有：<strong>股神经、股鞘（股动脉、股静脉、股管和淋巴结）</strong></p>
+<p><strong>试述股鞘的概念、分区及各腔的内容；</strong></p>
+<p><strong>包裹股血管和股管的一个漏斗形股筋膜鞘</strong>，由<strong>腹横筋膜和髂筋膜向下延伸形成</strong>，长3~4cm，分为三个腔</p>
+<ul>
+<li>外侧腔：股动脉</li>
+<li>中间腔：股静脉</li>
+<li>内侧腔：股管</li>
+</ul>
+<p><strong>试述股管的境界和上口的特点；</strong></p>
+<ul>
+<li>底向上的锥形筋膜管，长1.3~1.5cm，<strong>上口为股环</strong>、下为盲端</li>
+<li>境界：前界为腹股沟韧带、后界为耻骨梳韧带、内侧为腔隙韧带、外侧为股静脉的纤维隔</li>
+<li>股环：内容为淋巴结和脂肪组织</li>
+<li>股疝：疝囊通过股环，经过股管向卵圆窝突出的疝称为股疝</li>
+</ul>
+<p><strong>试述收肌管的境界和内容。</strong></p>
+<ul>
+<li>
+<p>收肌管是<strong>股三角和腘窝之间的通道，所以股三角和腘窝之间的炎症可以相互蔓延</strong></p>
+</li>
+<li>
+<p>境界</p>
+</li>
+<li>
+<p>前：大收肌腱板</p>
+</li>
+<li>
+<p>后：长收肌和大收肌</p>
+</li>
+<li>
+<p>外：股内侧肌</p>
+</li>
+<li>
+<p><strong>上：股三角尖</strong></p>
+</li>
+<li>
+<p>下：收肌腱裂孔</p>
+</li>
+<li>
+<p>结构：<strong>前</strong>为股神经和隐神经和膝降动脉，<strong>中</strong>为股动脉，<strong>后</strong>为股静脉</p>
+</li>
+<li>
+<p><strong>通过收肌管者</strong>为：股动脉和股静脉</p>
+</li>
+<li>
+<p>途中<strong>穿出收肌管壁</strong>者：隐神经和膝降动脉</p>
+</li>
+</ul>
+<p><strong>股动脉的延续</strong></p>
+<ul>
+<li><strong>腘动脉</strong></li>
+<li><strong>胫前动脉——足背动脉</strong></li>
+<li><strong>胫后动脉——腓动脉，足底内、外侧动脉——足底弓</strong></li>
+</ul>
+<h2 id="_3">臂前区、肘窝、前臂前区、小腿前外侧</h2>
+<p><strong>臂前区浅筋膜内头静脉、贵要静脉的走行</strong></p>
+<ul>
+<li>
+<p>头静脉：手背静脉网桡侧——肱二头肌外侧沟——三角肌胸大肌间沟——腋静脉或锁骨下静脉</p>
+</li>
+<li>
+<p>贵要静脉：手背静脉网——肱二头肌内侧沟——肱静脉或腋静脉</p>
+</li>
+</ul>
+<p><strong>前臂部浅筋膜内皮神经的来源与分布</strong></p>
+<ul>
+<li>肋间臂神经：来自第二（胸神经）肋间神经外侧皮支</li>
+<li>臂内侧皮神经：来自臂丛内侧束</li>
+<li>臂外侧下皮神经：来自桡神经</li>
+<li><strong>前臂内侧皮神经</strong>：来自臂丛内侧束</li>
+<li>临床意义：位置表浅，变异少，有足够的长度和直径，常被用于周围神经外伤的移植体</li>
+</ul>
+<p><strong>臂肌的分群、各肌的起止、作用及神经支配</strong></p>
+<p><strong>肱二头肌</strong></p>
+<ul>
+<li>长头起自肩胛骨盂上结节</li>
+<li>短头起自肩胛骨喙突</li>
+<li>止点：桡骨粗隆</li>
+<li>作用是屈肩、屈肘、使前臂旋后</li>
+<li>肌皮神经支配（C5~7）</li>
+</ul>
+<p><strong>喙肱肌</strong></p>
+<ul>
+<li>起点：肩胛骨喙突</li>
+<li>止点：肱骨中部内侧</li>
+<li>屈肩、上臂内收</li>
+<li>神经支配：肌皮神经（C5~7）</li>
+</ul>
+<p><strong>肱肌</strong></p>
+<ul>
+<li>起点：肱骨前面下半</li>
+<li>止点：尺骨粗隆</li>
+<li>屈肘关节</li>
+<li>神经支配：肌皮神经（C5~7）</li>
+</ul>
+<p><strong>肱动脉的起止、行程、分支与分布</strong></p>
+<p>在大圆肌腱下缘续于腋动脉，沿肱二头肌内侧沟下行至肘窝，位置表浅，可触及，肱动脉在臂上份居于肱骨内侧，臂中份局前中方，臂下份居于前方，分支有：</p>
+<ul>
+<li>肱深动脉：伴行桡神经进入肱骨肌管，分布于肱三头肌和肱肌</li>
+<li>尺侧上副动脉：参与肘关节网构成</li>
+<li>尺侧下副动脉，参与肘关节网构成</li>
+</ul>
+<p><strong>尺神经在臂部的走行特点</strong></p>
+<ul>
+<li>在臂上部行于肱动脉内侧，至臂中点附近离开肱动脉，向后穿过内侧肌间隔，进入臂后区，尺神经在臂部无分支</li>
+</ul>
+<p><strong>肘窝的境界、内容以及肘窝内血管神经的排列关系。</strong></p>
+<p><strong>境界：</strong></p>
+<ul>
+<li>上界：肱骨内外上髁的连线</li>
+<li>下外侧界：肱桡肌</li>
+<li>下内侧界：旋前圆肌</li>
+<li>顶：皮肤、浅筋膜、深筋膜、肱二头肌腱膜</li>
+<li><strong>底：肱肌、旋后肌和肘关节囊</strong></li>
+</ul>
+<p><strong>内容：</strong></p>
+<ul>
+<li>肱二头肌肌腱、肱动脉、肱静脉、肘深淋巴结、正中神经、前臂外侧皮神经、桡神经</li>
+<li>桡神经起于肱肌和肱桡肌之间，约在肱骨外上髁前方或稍下方分为浅深两支</li>
+<li>前臂外侧皮神经经过肱二头肌腱外侧穿出深筋膜</li>
+<li><strong>内由尺侧向桡侧依次为正中神经、肱动脉及其两条伴行静脉、肱二头肌腱和桡神经及其分支</strong></li>
+</ul>
+<p><img alt="image-20251114150436354" src="/images/image-20251114150436354.png" /></p>
+<p><strong>前臂肌的分群、各肌的起止、作用及神经支配</strong></p>
+<p><strong>第一层：肱桡肌、旋前圆肌、桡侧腕屈肌、掌长肌、尺侧腕屈肌</strong></p>
+<ul>
+<li>肱桡肌起自肱骨外上髁的近端1/3，止于桡骨茎突的底部外侧，桡神经支配</li>
+<li>其余四肌均起自肱骨内上髁，大部分为正中神经支配，尺神经支配（尺侧腕屈肌和指深屈肌尺侧半）</li>
+</ul>
+<p><strong>第二层：指浅屈肌</strong></p>
+<ul>
+<li>起自肱骨内上髁，桡骨上半部前面，止于第2至5指中节指骨底两侧，正中神经支配</li>
+</ul>
+<p><strong>第三层：拇长屈肌、指深屈肌</strong></p>
+<ul>
+<li>拇长屈肌起自桡骨近侧端前面，止于拇指远节指骨底</li>
+<li>指深屈肌起自尺骨近侧端前面和骨间膜上部，止于第2至5远节指骨底前面</li>
+</ul>
+<p><strong>第四层：旋前方肌</strong></p>
+<ul>
+<li>附着于桡骨、尺骨和前臂骨间膜</li>
+</ul>
+<p><strong>前臂屈肌后间隙的境界和临床意义。</strong></p>
+<ul>
+<li>位于前臂远侧1/4段的潜在间隙</li>
+</ul>
+<p><strong>境界</strong></p>
+<ul>
+<li>内侧界：尺侧腕屈肌，前臂筋膜</li>
+<li>外侧界：桡侧腕屈肌，前臂筋膜</li>
+<li>前界：指深屈肌，拇长屈肌腱</li>
+<li>后界：旋前方肌</li>
+</ul>
+<p>临床意义：此间隙向远侧经腕管通掌中间隙，两者之一有感染时，可以相互蔓延</p>
+<p><strong>腓总神经、腓深神经和腓浅神经的行程、分布及腓总神经损伤后出现的症状</strong></p>
+<p><strong>腓总神经</strong></p>
+<ul>
+<li>起自坐骨神经，沿腘窝外侧缘下行，绕过<strong>腓骨颈</strong>（这是最关键也是最易受损的部位），分为两个终末支：<strong>腓浅神经</strong>和<strong>腓深神经</strong></li>
+<li><strong>腓深神经</strong></li>
+<li>于腓骨与腓骨长肌之间穿出，进入<strong>前骨筋膜鞘</strong>，<strong>与胫前动脉伴行</strong>，走在骨间膜表面，先位于胫骨前肌和趾长伸肌之间，后位于胫骨前肌和拇长伸肌之间。</li>
+<li>运动纤维支配小腿<strong>前群肌</strong>（胫骨前肌、趾长伸肌、拇长伸肌、第三腓骨肌）和足背的<strong>拇短伸肌、趾短伸肌</strong>。<ul>
+<li><strong>足下垂</strong>：行走时为防止足尖拖地，患者会采取“<strong>跨阈步态</strong>”，即过分抬高患肢，像跨门槛一样。</li>
+</ul>
+</li>
+<li>感觉纤维支配<strong>第1、2趾相对缘</strong>的背侧皮肤</li>
+<li><strong>腓浅神经</strong></li>
+<li>起始于腓骨长肌深面，走在小腿<strong>外侧骨筋膜鞘</strong>内，下行于腓骨长、短肌与趾长伸肌之间</li>
+<li><strong>运动支配</strong>： 小腿<strong>外侧群肌</strong>（腓骨长肌、腓骨短肌）<ul>
+<li>患足表现为“<strong>马蹄内翻足</strong>”（即足下垂伴内翻）</li>
+</ul>
+</li>
+<li><strong>感觉支配</strong>： 支配小腿前外侧下部、足背及趾背的大部分皮肤（第1、2趾相对缘除外）<ul>
+<li>足背内侧皮神经和足背中间皮神经（足背外侧皮神经是腓肠神经的终支）</li>
+</ul>
+</li>
+<li><strong>腓总神经在腓骨颈处的位置最为表浅</strong>易受损伤，受伤后导致<strong>小腿前、外侧群肌功能丧失</strong></li>
+<li><strong>腓总神经损伤时表现为</strong>：</li>
+<li>运动异常：<strong>足不能背屈，趾不能伸</strong>，<strong>足下垂且内翻</strong>，呈“马蹄内翻足＂畸形。行走时呈＂跨阙步态＂</li>
+<li>感觉异常：小腿前、外侧面及足背区出现明显的感觉障碍</li>
+</ul>
+<h2 id="_4">腕部手掌足背</h2>
+<p><strong>鼻烟窝的境界和内容及其临床意义</strong></p>
+<ul>
+<li>桡侧界：拇长展肌腱、拇短伸肌腱</li>
+<li>尺侧界：拇长伸肌腱</li>
+<li>近侧：桡骨茎突</li>
+<li>窝底：手舟骨，大多角骨</li>
+</ul>
+<p>临床意义：<strong>有桡动脉穿过，可在此处做桡动脉结扎</strong></p>
+<p><strong>腕管的构成及其内容及其临床意义</strong></p>
+<ul>
+<li><strong>屈肌支持带和腕骨沟共同围成</strong></li>
+<li>管内有：指浅、深屈肌腱及屈肌总腱鞘，<strong>拇长屈肌腱和正中神经穿过</strong></li>
+<li>临床意义：正中神经紧贴屈肌支持带深面经过，<strong>受压时可引起腕管综合征</strong></li>
+</ul>
+<p><strong>试述腕尺侧管、腕桡侧管和腕管的境界及穿行结构；</strong></p>
+<ul>
+<li>腕尺侧管中穿过<strong>尺动静脉和尺神经</strong>，在<strong>腕掌侧韧带和屈肌支持带之间</strong>，（其中还有掌长肌腱）</li>
+<li>腕桡侧管中穿过<strong>桡侧腕长屈肌腱</strong>，由<strong>屈肌支持带</strong>和<strong>手舟骨</strong>和<strong>大多角骨</strong>的骨面构成</li>
+</ul>
+<p><img alt="image-20251115135410585" src="/images/image-20251115135410585.png" /></p>
+<p><strong>试述掌中间隙和鱼际间隙的境界及炎症蔓延途径；</strong></p>
+<p><strong>掌中间隙</strong></p>
+<ul>
+<li>前界为<strong>3~5指屈肌腱和第2~4蚓状肌，屈肌总腱鞘</strong></li>
+<li>后界为<strong>骨间掌侧筋膜</strong></li>
+<li>外侧为<strong>掌中隔</strong></li>
+<li>内侧为<strong>内侧肌间隔</strong></li>
+<li>经腕管通过前臂屈肌后间隙，远侧经过第2、3、4蚓状肌管达指背</li>
+</ul>
+<p><img alt="image-20251114154728928" src="/images/image-20251114154728928.png" /></p>
+<p><strong>鱼际间隙</strong></p>
+<ul>
+<li>前界为<strong>掌中隔前部，示指屈肌腱和第1蚓状肌</strong></li>
+<li>后界为<strong>拇收肌筋膜</strong></li>
+<li>外侧界为<strong>外侧肌间隔</strong></li>
+<li>内侧界为<strong>掌中隔后部</strong></li>
+<li>此间隙远端<strong>经过第1蚓状肌管通向示指指背</strong>，近端为盲端</li>
+</ul>
+<p><img src="/images/image-20251114154719096.png" alt="image-20251114154719096"  /></p>
+<ul>
+<li>食指的感染最易引起鱼际间隙感染，而中指和环指的感染最易引起掌中间隙感染，掌中间隙感染会导致掌心隆起，而鱼际间隙感染会导致“虎口”消失</li>
+</ul>
+<p><strong>掌浅弓、掌深弓的组成、位置及主要分支；</strong></p>
+<p><strong>掌浅弓</strong></p>
+<ul>
+<li>位于<strong>掌腱膜的深面，指屈肌腱和蚓状肌的浅面</strong></li>
+<li><strong>桡动脉掌浅支和尺动脉终端构成</strong></li>
+<li>分出<strong>3条指掌侧总动脉，1条小指尺掌侧动脉</strong></li>
+</ul>
+<p><strong>掌深弓</strong></p>
+<ul>
+<li>位于<strong>骨间掌侧肌与骨间掌侧筋膜之间</strong></li>
+<li><strong>桡动脉的终端与尺动脉掌深支构成</strong></li>
+<li>发出三条<strong>掌心动脉</strong>，在掌指关节处与指掌侧总动脉吻合，<strong>拇主要动脉由桡动脉发出</strong></li>
+</ul>
+<p><strong>手肌的分群和各肌的名称及神经支配；</strong></p>
+<pre><code class="language-mermaid">flowchart TD
+A[手肌] --&gt; B[&quot;外侧群/鱼际肌&lt;br&gt;(4块)&quot;]
+A --&gt; C[中间群]
+A --&gt; D[&quot;内侧群/小鱼际肌&lt;br&gt;(3块)&lt;br&gt;全部由尺神经支配&quot;]
+
+B --&gt; B1[&quot;拇短展肌&lt;br&gt;拇短屈肌&lt;br&gt;拇对掌肌&quot;]
+B1 --&gt; B11[&quot;由正中神经支配&quot;]
+
+B --&gt; B2[&quot;拇收肌&quot;]
+B2 --&gt; B21[&quot;由尺神经支配&quot;]
+
+C --&gt; C1[&quot;蚓状肌(4块)&quot;]
+C1 --&gt; C11[&quot;第1、2蚓状肌&lt;br&gt;由正中神经支配&quot;]
+C1 --&gt; C12[&quot;第3、4蚓状肌&lt;br&gt;由尺神经支配&quot;]
+
+C --&gt; C2[&quot;骨间掌侧肌(3块)&lt;br&gt;全部由尺神经支配&quot;]
+C --&gt; C3[&quot;骨间背侧肌(4块)&lt;br&gt;全部由尺神经支配&quot;]
+</code></pre>
+<pre><code class="language-mermaid">flowchart TD
+    A[手肌与常见损伤] --&gt; B[&quot;手肌分群与功能&lt;br&gt;（手内在肌）&quot;]
+    A --&gt; C[&quot;核心神经支配&quot;]
+    A --&gt; D[&quot;典型神经损伤表现&quot;]
+
+    B --&gt; B1[&quot;外侧群（鱼际肌）&quot;]
+    B1 --&gt; B11[&quot;拇短展肌&lt;br&gt;拇对掌肌&lt;br&gt;拇短屈肌&quot;]
+    B11 --&gt; B111[&quot;功能：&lt;br&gt;拇指对掌、外展、屈曲&quot;]
+    B1 --&gt; B12[&quot;拇收肌&quot;]
+    B12 --&gt; B121[&quot;功能：拇指内收&quot;]
+
+    B --&gt; B2[&quot;内侧群（小鱼际肌）&quot;]
+    B2 --&gt; B21[&quot;小指展肌&lt;br&gt;小指对掌肌&lt;br&gt;小指短屈肌&quot;]
+    B21 --&gt; B211[&quot;功能：&lt;br&gt;小指对掌、外展、屈曲&quot;]
+
+    B --&gt; B3[&quot;中间群（核心协调肌）&quot;]
+    B3 --&gt; B31[&quot;蚓状肌（4块）&quot;]
+    B31 --&gt; B311[&quot;核心功能：&lt;br&gt;屈掌指关节&lt;br&gt;伸指间关节&lt;br&gt;（屈掌伸指）&quot;]
+    B3 --&gt; B32[&quot;骨间肌（7块）&quot;]
+    B32 --&gt; B321[&quot;骨间掌侧肌（3块）&lt;br&gt;功能：手指内收&quot;]
+    B32 --&gt; B322[&quot;骨间背侧肌（4块）&lt;br&gt;功能：手指外展&quot;]
+    B32 --&gt; B323[&quot;共同功能：&lt;br&gt;协同蚓状肌'屈掌伸指'&quot;]
+
+    C --&gt; C1[&quot;正中神经&quot;]
+    C1 --&gt; C11[&quot;支配：&lt;br&gt;鱼际肌（除拇收肌）&lt;br&gt;第1、2蚓状肌&quot;]
+    C --&gt; C2[&quot;尺神经&quot;]
+    C2 --&gt; C21[&quot;支配：&lt;br&gt;小鱼际肌、全部骨间肌&lt;br&gt;第3、4蚓状肌、拇收肌&lt;br&gt;（手内在肌主神经）&quot;]
+
+    D --&gt; D1[&quot;正中神经损伤&quot;]
+    D1 --&gt; D11[&quot;猿手&quot;]
+    D11 --&gt; D111[&quot;表现：&lt;br&gt;鱼际肌萎缩&lt;br&gt;拇指不能对掌&lt;br&gt;手掌扁平&quot;]
+
+    D --&gt; D2[&quot;尺神经损伤&quot;]
+    D2 --&gt; D21[&quot;爪形手&quot;]
+    D21 --&gt; D211[&quot;表现：&lt;br&gt;掌指关节过伸&lt;br&gt;指间关节屈曲&lt;br&gt;（尤其小指和环指）&quot;]
+    D2 --&gt; D22[&quot;Froment征阳性&quot;]
+    D22 --&gt; D221[&quot;表现：&lt;br&gt;拇指示指捏纸时&lt;br&gt;拇指指间关节屈曲&quot;]
+    D2 --&gt; D23[&quot;运动障碍&quot;]
+    D23 --&gt; D231[&quot;手指内收外展不能&lt;br&gt;（骨间肌瘫痪）&quot;]
+
+    D --&gt; D3[&quot;桡神经损伤&quot;]
+    D3 --&gt; D31[&quot;垂腕&quot;]
+    D31 --&gt; D311[&quot;表现：&lt;br&gt;腕关节及各手指&lt;br&gt;不能伸直&quot;]
+</code></pre>
+<p><strong>由浅入深叙述手掌的层次结构。</strong></p>
+<ul>
+<li>浅层：皮肤，浅筋膜</li>
+<li>中层：掌腱膜，<strong>掌浅弓及其分支</strong>，尺神经浅支及其分支，正中神经及其分支，指浅、深屈肌腱和蚓状肌及其屈肌总腱鞘，筋膜间隙</li>
+<li>深层：骨间掌侧筋膜，<strong>掌深弓及分支</strong>，尺神经深支及其分支，骨间肌及掌骨</li>
+</ul>
+<p><strong>试述足背皮神经的来源和伴行关系</strong></p>
+<ul>
+<li>隐神经</li>
+<li>足背内侧皮神经和足背中间皮神经</li>
+<li>足背外侧皮神经</li>
+<li>腓深神经终末支</li>
+</ul>
+<pre><code class="language-mermaid">flowchart TD
+    A[足背皮神经] --&gt; B[&quot;隐神经&quot;]
+    A --&gt; C[&quot;腓浅神经&quot;]
+    A --&gt; D[&quot;腓深神经&quot;]
+    A --&gt; E[&quot;腓肠神经&quot;]
+
+    B --&gt; B1[&quot;伴行：&lt;br&gt;大隐静脉&quot;]
+    C --&gt; C1[&quot;伴行：&lt;br&gt;腓浅静脉&quot;]
+    D --&gt; D1[&quot;伴行：&lt;br&gt;胫前动脉&quot;]
+    E --&gt; E1[&quot;伴行：&lt;br&gt;小隐静脉&quot;]
+
+    B --&gt; B2[&quot;分布区：&lt;br&gt;足背内侧&quot;]
+    C --&gt; C2[&quot;分布区：&lt;br&gt;足背中部大部分&quot;]
+    D --&gt; D2[&quot;分布区：&lt;br&gt;第1-2趾间&quot;]
+    E --&gt; E2[&quot;分布区：&lt;br&gt;足背外侧&quot;]
+</code></pre>
+<h2 id="1">上下肢后区1</h2>
+<p><strong>肘后三角和肘外侧三角的位置关系；</strong></p>
+<p>肘后三角：<strong>肱骨内外上髁与尺骨鹰嘴</strong>之间形成一个等腰三角形</p>
+<ul>
+<li>肘关节脱位时，肘后三角的关系改变</li>
+</ul>
+<p>肘外侧三角：屈肘90度时，<strong>从桡侧见肱骨外上髁、桡骨头和尺骨鹰嘴之间形成的等腰三角形</strong>，其尖向前，此三角的<strong>中心正对肘关节腔</strong></p>
+<ul>
+<li>肘关节穿刺时，肘外侧三角进针</li>
+</ul>
+<p><strong>桡神经、尺神经在臂部的走行特点；</strong></p>
+<ul>
+<li>
+<p><strong>桡神经</strong>：在大圆肌下缘与肱骨交角处，伴肱深血管向外下进入肱肌肌管，至臂中、下1/3交界处与桡侧副动脉一起穿臂外侧肌间隔，达肘窝</p>
+</li>
+<li>
+<p><strong>尺神经：</strong>伴行尺侧上副动脉，沿臂内侧肌间隔后方下行至尺神经沟</p>
+</li>
+</ul>
+<p><strong>肱骨肌管的构成与通行结构；</strong></p>
+<ul>
+<li>由肱三头肌与肱骨桡神经沟构成</li>
+<li><strong>桡神经与肱深血管通过</strong></li>
+</ul>
+<p>临床意义：肱骨干骨折</p>
+<p><strong>肌腱袖的构成与临床意义。</strong></p>
+<ul>
+<li>肩带肌中的<strong>冈上肌、冈下肌、小圆肌、肩胛下肌</strong>的腱经过肩关节周围时，与关节囊愈着，形成腱膜结构包绕肩关节的上、后、前方</li>
+<li>稳定肩关节，肩关节脱位或扭伤时，可伴有肌腱袖的撕裂</li>
+</ul>
+<p><strong>试述掌握梨状肌上孔和下孔的境界及其穿行物。</strong></p>
+<p><strong>梨状肌上孔</strong></p>
+<ul>
+<li>上界：坐骨大孔上缘</li>
+<li>下界：梨状肌上缘</li>
+<li><strong>臀上神经、臀上动脉、臀上静脉（从外向内）</strong></li>
+</ul>
+<p><strong>梨状肌下孔</strong></p>
+<ul>
+<li>上界：梨状肌下缘</li>
+<li>
+<p>下界：骶结节韧带、骶棘韧带</p>
+</li>
+<li>
+<p>从外向内：坐骨神经、股后皮神经、臀下神经、臀下动脉、臀下静脉、阴部内静脉、阴部内动脉、阴部神经</p>
+</li>
+</ul>
+<p><strong>梨状肌综合征</strong>： 由于梨状肌的损伤、痉挛或解剖变异（如坐骨神经穿行梨状肌），<strong>压迫了从其下孔穿出的坐骨神经</strong>，引起一系列以臀腿部放射性疼痛为主要表现的症状。这是坐骨神经痛的常见原因之一</p>
+<p><strong>试述穿经坐骨小孔的结构。</strong></p>
+<ul>
+<li>由<strong>骶结节韧带</strong>、<strong>骶棘韧带</strong>和<strong>坐骨棘</strong>围成</li>
+<li><strong>阴部内动脉</strong>、<strong>阴部内静脉</strong>、<strong>阴部神经</strong></li>
+</ul>
+<p><img alt="image-20251114163044246" src="/images/image-20251114163044246.png" /></p>
+<p><strong>试述腘窝的解剖层次，静脉、动脉和神经的排列关系</strong></p>
+<p>为膝后区的一菱形凹陷</p>
+<ul>
+<li>外上界为股二头肌腱</li>
+<li>内上界为半腱肌和半膜肌</li>
+<li>内下和外下界分别为腓肠肌内、外侧头</li>
+<li>顶为：腘筋膜</li>
+<li><strong>底为：股骨腘面、膝关节囊后部，腘斜韧带，腘肌</strong></li>
+</ul>
+<p><img alt="image-20251115204054413" src="/images/image-20251115204054413.png" /></p>
+<p><strong>试述坐骨神经、胫神经走行、伴行结构及支配范围</strong></p>
+<ul>
+<li>坐骨神经：<strong>骶丛分支，经梨状肌下孔出骨盆</strong>，经坐骨结节与大转子之间至大腿后面达腘窝。多<strong>在腘窝上角附近分为胫神经和腓总神经</strong>。在股部发肌支<strong>支配大收肌坐骨部、半腱肌、半膜肌、股二头肌</strong>；</li>
+<li>胫神经tibial n：在小腿<strong>经比目鱼肌深面伴胫后动脉下降，经过内踝后方，在屈肌支持带深面分为足底内外侧神经</strong>。支配足底诸肌、腓肠肌、跖肌、比目鱼肌、腘肌、胫骨后肌、拇长屈肌和趾长屈肌，分布足底皮肤</li>
+<li>损伤后表现：<strong>足不能跖屈和内翻</strong>（小腿三头肌和胫骨后肌瘫痪），因而足呈背屈、外翻，<strong>呈“钩状足”畸形。感觉丧失区主要在足底。</strong></li>
+</ul>
+<h2 id="2">上下肢后区2</h2>
+<p><strong>试述伸肌支持带的位置、所形成骨纤维鞘的名称及通过的结构</strong></p>
+<p>腕后区深层，形成6个骨纤维管</p>
+<ul>
+<li>拇长展肌和拇短伸肌及其腱鞘</li>
+<li><strong>桡侧腕长伸肌和桡侧腕短伸肌</strong>及其腱鞘</li>
+<li>拇长伸肌及其腱鞘</li>
+<li>指伸肌和示指伸肌及其腱鞘</li>
+<li>小指伸肌及其腱鞘</li>
+<li>尺侧腕伸肌及其腱鞘</li>
+</ul>
+<p><strong>试述小隐静脉在小腿部的走行、交通及其临床意义；</strong></p>
+<ul>
+<li><strong>起始于足背静脉弓的外侧端</strong></li>
+<li>经过外踝后方，行于小腿后正中线上行<strong>注入腘静脉</strong></li>
+<li><strong>下肢静脉曲张</strong>、<strong>血栓性浅静脉炎</strong>、外科手术（高位结扎与剥脱术）</li>
+</ul>
+<p><strong>胫神经</strong></p>
+<ul>
+<li>伴胫后血管行于小腿后群浅深肌间，并发出分支支配这些肌（经比目鱼肌深面伴胫后动脉下降，经过内踝后方）在屈肌支持带的深方分<strong>足底内外侧神经</strong>，<strong>支配足底诸肌</strong></li>
+<li>损伤后，小腿后群肌及足底肌瘫痪，导致<strong>足不能跖屈</strong>（无法提踵）、<strong>内翻无力</strong>，由于拮抗肌（小腿前群和外群肌）占优势，患足表现为<strong>背屈和外翻</strong>位，即“<strong>勾状足</strong>”畸形</li>
+<li><strong>感觉丧失区主要在足底</strong></li>
+</ul>
+<p><strong>腓总神经</strong></p>
+<ul>
+<li>起自坐骨神经，沿腘窝外侧缘下行，绕过<strong>腓骨颈</strong>（这是最关键也是最易受损的部位），分为两个终末支：<strong>腓浅神经</strong>和<strong>腓深神经</strong></li>
+<li><strong>腓总神经损伤时表现为</strong>：足不能背屈，趾不能伸，足下垂且内翻，呈“马蹄内翻足＂畸形。行走时呈＂跨阙步态＂时小腿前、外侧面及足背区出现明显的<strong>感觉障碍</strong></li>
+</ul>
+<p><strong>坐骨神经sciatic n</strong></p>
+<ul>
+<li>骶丛分支，经<strong>梨状肌下孔出骨盆，经坐骨结节与大转子之间至大腿后面达腘窝</strong>。多在<strong>腘窝上角附近分为胫神经和腓总神经</strong>。在股部发肌支<strong>支配大收肌坐骨部、半腱肌、半膜肌、股二头肌；</strong></li>
+</ul>
+<p><strong>踝管的位置，构成和通过的结构⭐️</strong></p>
+<p>由<strong>内踝、跟骨内侧面和屈肌支持带共同围成</strong></p>
+<ul>
+<li><strong>屈肌支持带</strong>向深面发出3个纤维隔，将踝管分为<strong>4个骨纤维管</strong>，通过的结构由前至后依次为</li>
+<li><strong>胫骨后肌</strong>肌腱及其腱鞘</li>
+<li><strong>趾长屈肌</strong>肌腱及其腱鞘</li>
+<li><strong>胫后动脉、静脉及胫神经</strong></li>
+<li><strong>拇长屈肌</strong>肌腱及其腱鞘</li>
+</ul>
+<p><strong>踝关节前方经过结构由内而外分别是哪些</strong></p>
+<ul>
+<li><strong>踝关节前方经过结构</strong>由内而外分别是：<strong>胫骨前肌腱及腱鞘，踇长伸肌腱及腱鞘，足背血管，腓深神经，趾长伸肌肌腱及腱鞘</strong></li>
+</ul>
+<h2 id="1_1">颈部1</h2>
+<p><strong>试述颈部筋膜的层次、包裹的结构及主要的筋膜间隙位置；</strong></p>
+<p><strong>封套筋膜</strong></p>
+<ul>
+<li>包裹：<strong>斜方肌、胸锁乳突肌、下颌下腺、腮腺</strong></li>
+<li>形成<strong>胸骨上间隙（气管切开经过此间隙）</strong></li>
+<li>颈深筋膜浅层分为两层，分别附着于胸骨柄前后缘，两层之间为此间隙</li>
+<li>内有颈静脉弓，颈前静脉下段，胸锁乳突肌胸骨头</li>
+<li><strong>锁骨上间隙</strong>：颈浅筋膜在锁骨上分两层而成，内有颈前静脉，颈外静脉末端</li>
+</ul>
+<p><strong>内脏筋膜</strong></p>
+<ul>
+<li>包裹咽、食管颈部、气管颈部，前下部覆盖气管，称为<strong>气管前筋膜</strong>，形成<strong>甲状腺鞘，颈动脉鞘</strong>，后上部包裹<strong>颊肌和咽缩肌</strong>，称为<strong>颊咽筋膜</strong></li>
+<li>形成<strong>气管前间隙</strong></li>
+<li>气管前筋膜与气管颈部之间，内有甲状腺最下动脉，甲状腺下静脉，甲状腺奇静脉丛，头臂干，左头臂静脉等</li>
+<li>气管切开必经过此间隙</li>
+</ul>
+<p><strong>椎前筋膜</strong></p>
+<ul>
+<li>
+<p>位于颈深肌群的浅面，覆盖<strong>臂丛、颈交感干、膈神经、锁骨下动静脉</strong></p>
+</li>
+<li>
+<p>向下外包绕腋血管及臂丛形成<strong>腋鞘</strong></p>
+</li>
+<li>椎前间隙：脊柱颈部、颈深肌群与椎前筋膜之间</li>
+</ul>
+<p><strong>试述颈部的分部和划区、主要体表标志 ；</strong></p>
+<ul>
+<li><strong>颈前区</strong></li>
+<li><strong>舌骨上区</strong><ul>
+<li>刻下三角</li>
+<li>下颌下三角</li>
+</ul>
+</li>
+<li><strong>舌骨下区</strong><ul>
+<li>颈动脉三角</li>
+<li>肌三角</li>
+</ul>
+</li>
+<li><strong>胸锁乳突肌区</strong></li>
+<li><strong>颈外区</strong></li>
+<li>枕三角</li>
+<li>
+<p>锁骨上大窝（三角）</p>
+</li>
+<li>
+<p>体表标志有：舌骨、甲状软骨、环状软骨、颈动脉结节、胸锁乳突肌、胸骨上窝、锁骨上大窝</p>
+</li>
+</ul>
+<p><strong>试述下颌下三角的构成、内容物及其毗邻关系。</strong></p>
+<ul>
+<li>境界：二腹肌前后腹、下颌骨体下缘</li>
+<li><strong>内容物</strong></li>
+<li><strong>浅面有皮肤、浅筋膜、颈阔肌和颈筋膜浅层</strong></li>
+<li>
+<p><strong>下颌舌骨肌浅面</strong></p>
+<ul>
+<li><strong>下颌下腺、面动静脉、下颌下淋巴结</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>下颌舌骨肌深面</strong></p>
+<ul>
+<li><strong>舌神经</strong>（<strong>三叉N下颌N的分支</strong>），在下颌下腺深部内上方与舌骨舌肌之间弓形向前入舌，<strong>舌前2/3的一般感觉和味觉</strong>（通过鼓索神经）</li>
+<li><strong>下颌下神经节</strong></li>
+<li><strong>舌下神经</strong>：下颌下腺深部的内下方，支配舌内外肌</li>
+<li><strong>下颌下腺管</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>舌骨舌肌深面</strong></p>
+<ul>
+<li><strong>舌动静脉</strong>：舌动脉发自颈外动脉，在舌下N与二腹肌中间腱之间前行至舌骨舌肌后缘深面入舌</li>
+</ul>
+</li>
+</ul>
+<p><img alt="image-20251114171503977" src="/images/image-20251114171503977.png" /></p>
+<h2 id="2_1">颈部2</h2>
+<p><strong>试述颈动脉三角的境界，以及由浅入深的层次结构</strong></p>
+<p>境界：<strong>胸锁乳突肌上份前缘、肩胛舌骨肌上腹、二腹肌后腹</strong></p>
+<ul>
+<li>浅面由浅入深依次为：皮肤、<strong>浅筋膜、颈阔肌、颈深筋膜浅层</strong>；<strong>颈动脉鞘及其内容物</strong>，深面为椎前筋膜、交感干、内侧为咽侧壁及其筋膜</li>
+<li>包括：颈总动脉及其分支、颈内静脉及其分支、迷走神经及其分支、舌下神经及其分支</li>
+</ul>
+<p><strong>试述颈动脉鞘的位置，内容及毗邻关系。</strong></p>
+<ul>
+<li>外侧：胸锁乳突肌、舌骨下肌群、颈袢</li>
+<li>内侧：咽、食管、喉、气管、甲状腺、喉返神经</li>
+<li>后方：椎前筋膜、颈交感干、膈神经、椎前肌肉</li>
+<li>内容有颈内静脉、颈总动脉和颈内动脉，迷走神经</li>
+<li>颈外动脉的分支：<strong>甲状腺上动脉、舌动脉、面动脉、枕动脉、咽升动脉</strong>；终支为上颌动脉与颞浅动脉</li>
+</ul>
+<p><img alt="image-20251115161126356" src="/images/image-20251115161126356.png" /></p>
+<p><strong>简述甲状腺的形态、被膜、位置、毗邻、动脉与喉的神经的位置关系及其临床意义。</strong></p>
+<ul>
+<li><strong>形态</strong>：H形，侧叶、峡、锥状叶，两侧叶位于喉下部和气管的前外侧，上达甲状软骨的中部，下至第6气管软骨，峡位于第2~4气管软骨前方，锥状叶起自甲状腺峡部</li>
+<li><strong>被膜：</strong></li>
+<li>甲状腺假被膜：即甲状腺鞘，由气管前筋膜包裹甲状腺而成；也构成甲状腺悬韧带</li>
+<li>甲状腺真被膜：即甲状腺纤维囊</li>
+<li>
+<p>两者之间的间隙为囊鞘间隙（内有疏松结缔组织、血管、神经和甲状旁腺）</p>
+</li>
+<li>
+<p><strong>位置毗邻</strong>：</p>
+</li>
+<li><strong>前面：</strong>皮肤、浅筋膜、封套筋膜、舌骨下肌群和气管前筋膜</li>
+<li>侧叶后内侧：喉和气管、咽和食管、喉返神经</li>
+<li>侧叶后外侧：颈动脉鞘、颈交感干</li>
+<li><strong>甲状腺肿大时</strong></li>
+<li>呼吸困难——压迫气管</li>
+<li>吞咽困难——压迫食管</li>
+<li>声音嘶哑——压迫喉返神经</li>
+<li>出现Horner综合征：压迫颈交感干</li>
+<li><strong>甲状腺上动脉（来自颈外动脉）与喉上神经</strong></li>
+<li>喉上神经内支：穿甲状舌骨膜入喉，分布于声门裂以上的喉粘膜、会厌、舌根</li>
+<li>喉上神经外支：伴随甲状腺上动脉行向前下方，靠近甲状腺上端时离开动脉，发出<strong>肌支支配环甲肌和咽下缩肌</strong></li>
+<li>在甲状腺次全手术时，结扎甲状腺上动脉要<strong>紧贴</strong>甲状腺侧叶上极，以免损伤<strong>喉上神经外支</strong>。</li>
+<li><strong>甲状腺下动脉（来自甲状颈干）与喉返神经</strong></li>
+<li>喉返神经行至咽下缩肌上缘改名为喉下神经，于环甲关节后方入喉</li>
+<li><strong>喉下神经</strong>：<strong>运动纤维支配除环甲肌以外的所有喉肌，感觉纤维分布于声门裂以下的喉粘膜</strong></li>
+<li><strong>左喉返神经</strong>行程较长，位置深，多在<strong>甲状腺下动脉后方</strong>与其交叉</li>
+<li>在甲状腺次全手术时，结扎甲状腺下动脉要<strong>远离</strong>甲状腺侧叶下极，以免损伤<strong>喉返神经</strong>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">特征</th>
+<th style="text-align: left;"><strong>喉上神经损伤</strong></th>
+<th style="text-align: left;"><strong>喉返神经损伤</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>主要功能</strong></td>
+<td style="text-align: left;">声带上区感觉、环甲肌运动（紧张声带）</td>
+<td style="text-align: left;">所有其他喉内肌运动（外展、内收、松弛声带）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>核心损伤表现</strong></td>
+<td style="text-align: left;"><strong>声音低沉（外支）</strong>、无力、易疲劳；<strong>误咽、呛咳（内支）</strong></td>
+<td style="text-align: left;"><strong>声音嘶哑（单侧）</strong>；<strong>呼吸困难（双侧）</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>试述甲状腺手术由浅入深经过哪些层次？</strong></p>
+<ul>
+<li>
+<p>层次：皮肤、浅筋膜、颈阔肌、颈深筋膜浅层，舌骨下肌群和气管前筋膜</p>
+</li>
+<li>
+<p><strong>注意事项</strong></p>
+</li>
+</ul>
+<p>①头应保持正中位置，并尽量后仰，使气管接近体表，以免伤及食管及周围的血管和神经；</p>
+<p>②对<strong>幼儿行气管切开时，应不低于第5气管软骨</strong>，以免伤及胸腺、左头臂静脉和主动脉弓等。</p>
+<p><strong>名词解释：颈动脉鞘、颈袢、颈动脉窦、甲状腺悬韧带、甲状腺囊鞘间隙</strong></p>
+<p><strong>颈动脉鞘</strong>是内脏筋膜向两侧延伸形成的致密筋膜鞘，上起颅底，下续纵隔</p>
+<ul>
+<li>由浅入深（由前外至后内）依次为：</li>
+<li><strong>颈内静脉</strong></li>
+<li><strong>颈总动脉</strong>（及其分叉为颈内、外动脉）</li>
+<li><strong>迷走神经</strong></li>
+</ul>
+<p><strong>颈袢</strong>（又称舌下神经袢）是一个支配舌骨下肌群（<strong>胸骨舌骨肌、胸骨甲状肌、肩胛舌骨肌</strong>）的神经环路</p>
+<ul>
+<li>
+<p><strong>构成：</strong></p>
+</li>
+<li>
+<p>由第1～3颈神经前支的分支构成。<strong>第1颈神经前支的部分纤维随舌下神经走行，在颈动脉三角内离开此神经</strong>，称为舌下神经降支，沿颈内动脉及颈总动脉浅面下行，又名颈袢上根。第2、3颈神经前支的纤维，经过颈丛联合，发出降支，称为颈袢下根，沿颈内静脉浅面下行。上、下两根在肩胛舌骨肌中间腱上缘，适平环状软骨弓处，在颈动脉鞘浅面合成颈袢</p>
+<ul>
+<li>
+<p><strong>上根：</strong> 来自舌下神经，内含第1颈神经的纤维</p>
+</li>
+<li>
+<p><strong>下根：</strong> 来自颈丛的第2、3颈神经纤维</p>
+</li>
+<li>
+<p><strong>吻合位置： 两根在颈动脉鞘的浅面（约平环状软骨水平，C6）吻合形成颈袢</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>颈动脉窦</strong>是<strong>颈总动脉末端</strong>和<strong>颈内动脉起始部</strong>的管壁局部膨大所形成的特殊结构</p>
+<ul>
+<li>能感知动脉血压的变化。当血压升高时，它受到刺激，通过舌咽神经将信号传至脑干的心血管中枢，反射性地引起心率减慢、血管扩张，从而使血压下降</li>
+</ul>
+<p><strong>甲状腺悬韧带</strong>是甲状腺假被膜（气管前筋膜）在甲状腺侧叶内侧增厚形成的纤维束</p>
+<ul>
+<li>将甲状腺侧叶的背面内侧连接到<strong>喉部（环状软骨侧面以及第1、2气管软骨环）</strong></li>
+</ul>
+<p><strong>甲状腺囊鞘间隙</strong>是位于甲状腺<strong>真被膜</strong>（纤维囊）和<strong>假被膜</strong>（气管前筋膜形成的甲状腺鞘）之间的潜在性间隙</p>
+<ul>
+<li>间隙内含有疏松结缔组织、血管（尤其是甲状腺上、下动脉的终末支）、甲状旁腺以及丰富的淋巴管</li>
+<li>使甲状腺在吞咽时能灵活地上下移动</li>
+</ul>
+<h2 id="3">颈部3<img alt="image-20251115124242076" src="/images/image-20251115124242076.png" /></h2>
+<p><strong>锁骨下静脉与锁骨下动脉在颈根部的行走和局部位置有何不同?</strong></p>
+<p><strong>锁骨下动脉</strong></p>
+<ul>
+<li>走行：绕<strong>胸膜顶（高出锁骨内侧1/3上缘2~3cm）</strong>的前上方，<strong>向外穿斜角肌间隙，至第一肋外缘</strong>，<strong>以前斜角肌为界分为三段</strong></li>
+<li>第1段：位于前斜角肌的内侧，胸膜顶的前方<ul>
+<li>椎动脉</li>
+<li>胸廓内动脉</li>
+<li>甲状颈干（分支甲状腺下动脉、肩胛上动脉、颈横动脉）</li>
+<li>肋颈干</li>
+</ul>
+</li>
+<li>第2段：位于前斜角肌的后方，上方紧贴臂丛各干，下方跨越胸膜顶</li>
+<li>第3段：位于前斜角肌的外侧：第一肋的上方<ul>
+<li><strong>前下方有锁骨下动脉，外上方为臂丛</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>锁骨下静脉</strong></p>
+<ul>
+<li>行程：自第一肋外缘续于腋静脉，经过锁骨与前斜角肌之间，向内侧与颈内静脉合成头臂静脉</li>
+<li>锁骨下静脉与第1肋、锁骨下肌和前斜角肌的筋膜相连，伤后易空气栓塞</li>
+</ul>
+<p><strong>试述前斜角肌的毗邻关系。</strong></p>
+<p><strong>颈根部</strong>是指颈部与胸部之间的接壤区，<strong>前界为胸骨柄，后界为第1胸椎体，两侧为第1肋</strong>，中心标志为<strong>前斜角肌</strong>，前斜角肌的毗邻有：</p>
+<ul>
+<li>前内侧的纵行结构：主要往来于颈胸之间，脏器（气管、食管、肺尖和胸膜顶）、血管（颈总动脉、颈内静脉）、胸导管、神经（迷走神经、膈神经、颈交感干）</li>
+<li>前后外侧的横行结构：主要往来于颈、胸与上肢之间，如血管（锁骨下动静脉）神经（臂丛）等</li>
+</ul>
+<p><strong>颈丛和臂丛的分支和支配</strong></p>
+<p>颈丛</p>
+<ul>
+<li>皮支</li>
+<li>肌支：支配肩胛提肌，斜方肌，椎前肌</li>
+</ul>
+<p>臂丛</p>
+<ul>
+<li><strong>肩胛背神经：支配菱形肌</strong></li>
+<li><strong>肩胛上神经：支配冈上、下肌</strong></li>
+<li>胸长神经：支配前锯肌</li>
+</ul>
+<p><strong>试述椎动脉三角的境界及内容。</strong></p>
+<p>境界：</p>
+<ul>
+<li>下界：锁骨下动脉第1段</li>
+<li>内侧界：颈长肌</li>
+<li>外侧界：前斜角肌</li>
+<li>尖：第6颈椎横突前结节</li>
+<li>后方：第7颈椎横突，第8颈神经前支、第1肋颈</li>
+<li>前方：颈动脉鞘、膈神经、（胸导管）</li>
+</ul>
+<p>内容：胸膜顶、椎动静脉、甲状颈干、甲状腺下动脉、颈交感干、颈胸神经节</p>
+<p><strong>斜角肌间隙的境界和穿过的结构</strong></p>
+<ul>
+<li>斜角肌间隙是位于<strong>颈部根部</strong>的一个重要的三角形肌间裂隙，由<strong>前斜角肌</strong>、<strong>中斜角肌</strong>和<strong>第一肋骨</strong>共同围成<strong>内有锁骨下动脉，臂丛穿过</strong></li>
+</ul>
+<p><img alt="image-20251114190559831" src="/images/image-20251114190559831.png" /></p>
+<p><strong>简述胸膜顶的位置及其主要毗邻关系。</strong></p>
+<p>位置：<strong>高出锁骨内侧1/3上缘2~3cm</strong></p>
+<p><strong>毗邻</strong></p>
+<ul>
+<li>前方：锁骨下动脉</li>
+<li>前外侧：前斜角肌、膈神经、迷走神经、锁骨下静脉、胸导管颈部（左）</li>
+<li>后方：第1、2肋，颈交感干，第1胸神经前支</li>
+<li>外侧：中斜角肌，臂丛</li>
+</ul>
+<p><strong>枕三角的境界及副神经的走行和损伤表现</strong></p>
+<p>枕三角：由<strong>胸锁乳突肌后缘、斜方肌前缘与肩胛舌骨肌下腹上缘</strong>构成</p>
+<p><strong>副神经在胸锁乳突肌后缘上、中1/3交点处进入枕三角，沿肩胛提肌表面下行，在斜方肌前缘中、下1/3交界点处进入该肌，被枕小神经勾绕是寻找副神经的标志</strong></p>
+<ul>
+<li>
+<p>副神经损伤时，患侧胸锁乳突肌和斜方肌瘫痪，头不能向患侧侧屈，发生<strong>患侧肩下垂、提肩无力</strong>等临床表现</p>
+</li>
+<li>
+<p>一侧<strong>胸锁乳突肌</strong>瘫痪：头向<strong>健侧</strong>倾斜，面转向<strong>患侧</strong>；向<strong>患侧</strong>屈头无力，向<strong>健侧</strong>转头无力</p>
+</li>
+<li>
+<p>若在枕三角内损伤副神经，则损伤侧斜方肌瘫痪</p>
+</li>
+</ul>
+<h2 id="1_2">胸部1</h2>
+<p><strong>胸壁由浅入深的层次有哪些？（胸膜腔穿刺术需要经过的层次）</strong></p>
+<ul>
+<li>皮肤、浅筋膜、深筋膜、胸壁肌、肋间肌、胸内筋膜</li>
+</ul>
+<p><strong>胸内筋膜</strong></p>
+<ul>
+<li>衬于肋和肋间隙内面的致密结缔组织膜，向上覆盖于胸膜顶称为胸膜上膜，固定和保护胸膜顶，向下形成膈上胸膜或膈胸膜筋膜</li>
+</ul>
+<p><strong>胸廓内动脉的走形和分支。</strong></p>
+<ul>
+<li>
+<p>胸廓内动脉<strong>起自锁骨下动脉第1段</strong>，锁骨下静脉后方紧贴胸膜顶前入胸腔，沿胸骨外侧第1~6肋软骨后面下行，至<strong>第6肋间隙分为肌膈动脉和腹壁上动脉</strong></p>
+</li>
+<li>
+<p><strong>分支有：心包膈动脉、肋间前动脉、穿支</strong></p>
+</li>
+</ul>
+<p><strong>试述膈肌中裂孔的位置，高度与走行结构。</strong></p>
+<ul>
+<li><strong>腔静脉孔</strong></li>
+<li>
+<p><strong>下腔静脉、右膈神经分支通过，约平T8</strong></p>
+</li>
+<li>
+<p><strong>食管裂孔</strong></p>
+</li>
+<li>
+<p><strong>食管、迷走神经通过，约平T10</strong></p>
+</li>
+<li>
+<p><strong>主动脉裂孔</strong></p>
+</li>
+<li><strong>降主动脉、胸导管通过，约平T12</strong></li>
+</ul>
+<p><strong>膈的腰肋三角构成和毗邻</strong></p>
+<ul>
+<li>位于膈的腰部与肋部起点之间，为尖向上的三角形区域，底为12肋，腰肋三角的前方与肾毗邻，后方有肋膈隐窝，故肾手术时小心撕破胸膜导致气胸</li>
+<li>通常情况下，<strong>左侧的腰肋三角比右侧更大、更薄弱</strong>，因此临床上左侧的博赫达勒克疝更为常见</li>
+</ul>
+<p><strong>膈的胸肋三角的位置，通过的结构</strong></p>
+<ul>
+<li>膈的胸骨部与肋部的起点之间。有腹壁上血管和来自腹壁和肝上面的淋巴管通过</li>
+</ul>
+<h2 id="2_2">胸部2</h2>
+<p><strong>胸膜隐窝与穿刺部位</strong></p>
+<ul>
+<li><strong>肋膈隐窝</strong>是<strong>肋胸膜与膈胸膜相互转折处的胸膜隐窝，是胸膜腔的最低部位</strong>，深吸气时，肺下缘也不能充满此处，胸膜腔的积液首先聚集于此</li>
+<li><strong>穿刺部位：腋后线第7或者第8肋间隙；肩胛线第8或者第9肋间隙</strong></li>
+<li><strong>肋纵隔隐窝</strong>：左侧较大</li>
+<li><strong>膈纵隔隐窝</strong>：仅存在于左侧</li>
+</ul>
+<p><strong>试述肺根内结构由上而下，从前向后的排列。</strong></p>
+<ul>
+<li><strong>从前往后</strong></li>
+<li>
+<p>左右肺均为：<strong>VABV</strong>（上肺静脉、肺动脉、主支气管、下肺动脉）</p>
+</li>
+<li>
+<p><strong>从上往下</strong></p>
+</li>
+<li>
+<p><strong>左侧：ABVV</strong>（肺动脉、主支气管、上肺静脉、下肺静脉）</p>
+</li>
+<li>
+<p><strong>右侧：BABVV</strong>（上肺支气管、肺动脉、中下叶支气管、上肺静脉、下肺静脉）</p>
+</li>
+</ul>
+<p><strong>动脉导管三角和动脉韧带</strong></p>
+<ul>
+<li>动脉导管三角的围成：<strong>左膈神经、左迷走神经、左肺动脉</strong></li>
+<li>是手术中寻找动脉导管的标志</li>
+</ul>
+<p><strong>纵隔左侧面观，食管上/下三角</strong></p>
+<p><strong>食管上三角</strong>：由锁骨下动脉、主动脉弓与脊柱围成，内有胸导管和食管上段</p>
+<p><strong>食管下三角</strong>：由心包、胸主动脉和膈围成，内有食管下份</p>
+<p><img alt="image-20251114200219286" src="/images/image-20251114200219286.png" /></p>
+<p><strong>分别试述左右肺根的毗邻。</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>左肺根</th>
+<th>右肺根</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上方</td>
+<td>主动脉弓</td>
+<td>奇静脉弓</td>
+</tr>
+<tr>
+<td>下方</td>
+<td>肺韧带</td>
+<td>肺韧带</td>
+</tr>
+<tr>
+<td>后方</td>
+<td>左迷走神经、胸主动脉</td>
+<td>右迷走神经、奇静脉</td>
+</tr>
+<tr>
+<td>前方</td>
+<td>左膈神经、心包膈血管</td>
+<td>右膈神经、心包膈血管、上腔静脉、右心房、部分心包</td>
+</tr>
+</tbody>
+</table>
+<p><strong>试述纵隔境界与分区。</strong></p>
+<p><strong>纵隔是左右纵隔胸膜之间的全部器官、结构和结缔组织的总称</strong>，位于胸腔正中偏左，呈上窄下宽，前短后长的矢状位</p>
+<ul>
+<li>前界为胸骨和肋软骨内面</li>
+<li>后街为脊柱胸段</li>
+<li>两侧为纵隔胸膜</li>
+<li>上为胸廓上口</li>
+<li>下为膈</li>
+</ul>
+<p><strong>纵隔的分区</strong>：以<strong>胸骨角至第4胸椎体的下缘为界</strong>，将纵隔分为上纵隔和下纵隔</p>
+<ul>
+<li><strong>上纵隔</strong>（分为三层）</li>
+<li><strong>前层（胸腺—静脉层）</strong>：胸腺、左右头臂静脉、上腔静脉</li>
+<li><strong>中层（动脉层）</strong>：主动脉及其分支，膈神经，迷走神经</li>
+<li><strong>后层</strong>：气管，食管，胸导管，左喉返神经</li>
+<li><strong>下纵隔</strong>（前、中、后纵隔）</li>
+<li><strong>前纵隔</strong>：胸骨体与心包前壁之间的窄隙<ul>
+<li>内有：胸腺（或者胸腺残件）下部，纵隔前淋巴结，疏松结缔组织</li>
+</ul>
+</li>
+<li><strong>中纵隔</strong>：心包、心包内大血管、心<ul>
+<li><strong>心包腔的穿刺部位在左剑肋角</strong></li>
+<li><strong>心包窦</strong></li>
+<li>心包横窦：位于升主动脉，肺动脉干与上腔静脉、左心房前壁之间的间隙</li>
+<li>心包斜窦：位于左右肺静脉，下腔静脉，左心房后壁和心包后壁之间的间隙</li>
+<li>心包前下窦</li>
+</ul>
+</li>
+<li><strong>后纵隔</strong>：食管、胸主动脉、奇静脉、半奇静脉、胸导管、迷走神经、交感干胸部、纵隔后淋巴结等</li>
+</ul>
+<p><strong>试述食管前方的毗邻结构。</strong></p>
+<ul>
+<li>第4胸椎以上：气管、气管杈、主动脉弓、左锁骨下动脉、左喉返神经</li>
+<li>第4胸椎以下：<strong>左主支气管（形成第二狭窄）</strong>、左心房的后面、左迷走神经、气管支气管淋巴结</li>
+</ul>
+<p><strong>食管的狭窄部</strong></p>
+<ul>
+<li>第1狭窄：<strong>食管的起始部</strong>，相当于<strong>第6颈椎的水平</strong></li>
+<li>第2狭窄：食管<strong>在左主支气管的后方与其交叉处</strong>，相当于第4胸椎体下缘</li>
+<li>第3狭窄：食管<strong>通过膈的食管裂孔处</strong>，相当于T10水平，在正中线左侧2~3cm</li>
+</ul>
+<p><strong>试述后纵隔的境界及走行的结构。</strong></p>
+<ul>
+<li><strong>前界：</strong> 心包后壁（即心包膈面）</li>
+<li><strong>后界：</strong> 第5-12胸椎体及椎间盘</li>
+<li><strong>上界：</strong> 胸骨角平面（与中纵隔和上纵隔分界）</li>
+<li><strong>下界：</strong> 膈</li>
+<li><strong>两侧：</strong> 纵隔胸膜</li>
+</ul>
+<p>食管胸部、胸主动脉、奇静脉、半奇静脉、副半奇静脉、胸导管、迷走神经、内脏大、小神经、胸交感干、纵隔后淋巴结</p>
+<h2 id="_5">腹前外侧壁</h2>
+<p><strong>皮肤</strong></p>
+<ul>
+<li>腹壁皮肤的皮肤薄而有弹性，皮下组织疏松，除腹股沟区皮肤外，其他部位的伸展度和移动度大，可以适应腹部的膨隆，临床上常选择腹前外侧壁的皮肤作为<strong>游离皮瓣的供皮区</strong></li>
+</ul>
+<p><strong>浅筋膜在脐平面以下可以分为两层</strong></p>
+<ul>
+<li>前层（脂肪层）：Camper筋膜，向下与股部的浅筋膜延续</li>
+<li>深层（膜性层）：Scarpa筋膜，在中线除附着于白线，向下在腹股沟下方一横指处附着于阔筋膜，向下与阴囊肉膜，阴茎浅筋膜和会阴浅筋膜（Colles筋膜）相续</li>
+<li>腹前外侧壁的深筋膜薄而不完整，这与腹壁的扩张有关</li>
+</ul>
+<p><strong>浅动脉</strong></p>
+<ul>
+<li><strong>腹外侧壁</strong>：<strong>肋间后动脉、肋下动脉和腰动脉</strong>的分支，比较细小</li>
+<li><strong>腹前壁正中线附近</strong>：浅动脉来自<strong>腹壁上动脉和腹壁下动脉</strong>的分支</li>
+<li><strong>腹前外侧壁</strong>：下半部分有<strong>腹壁浅动脉和旋髂浅动脉</strong></li>
+</ul>
+<p><img alt="image-20251114201836330" src="/images/image-20251114201836330.png" /></p>
+<p><strong>浅静脉</strong></p>
+<ul>
+<li>脐以上的浅静脉经过<strong>胸腹壁静脉</strong>回流入腋静脉</li>
+<li>脐以下的浅静脉经过<strong>腹壁浅静脉</strong>汇入大隐静脉，再回流入股静脉</li>
+</ul>
+<p><strong>皮神经</strong></p>
+<ul>
+<li>前皮支从正中线两旁穿出，外侧皮支在腋中线的延长线处穿腹外斜肌浅出，在分布上有节段性</li>
+<li>第8肋间神经分布于肋弓平面</li>
+<li><strong>第10肋间神经分布于脐平面</strong></li>
+<li>肋下神经分布于脐与耻骨联合平面</li>
+<li>第1腰神经分布于腹股沟韧带的上方</li>
+</ul>
+<p><img alt="image-20251114202313703" src="/images/image-20251114202313703.png" /></p>
+<p><strong>试述腹前外侧壁阔肌的层次、结构特点及其临床意义。</strong></p>
+<ul>
+<li><strong>腹直肌</strong>，位于中线两侧，垂直走行，起于耻骨嵴、耻骨梳—&gt;第5~7肋软骨</li>
+<li><strong>腹直肌鞘</strong><ul>
+<li>肋缘平面以上，前层仅由腹外斜肌腱膜组成</li>
+<li>脐以下4~5cm处，<strong>腹内斜肌的后层和腹横肌腱膜</strong>均转至腹直肌前面构成腹直肌鞘前层<strong>（弓状线）</strong></li>
+</ul>
+</li>
+<li>锥状肌</li>
+<li>白线：位于腹前正中线上，从剑突到耻骨联合和耻骨嵴的腱性结构</li>
+<li><strong>腹外斜肌</strong>：起于5~12肋的外面，肌纤维由外上斜向内下，在腹直肌外侧缘，髂前上棘与脐连线以下移行为腱膜</li>
+<li>腹外斜肌形成的结构<ul>
+<li>腹股沟管浅环（皮下环、外环）：在耻骨结节外上方的三角形的裂隙</li>
+<li>腹股沟韧带：腹外斜肌腱膜下缘附着于髂前上棘和耻骨结节之间，腱膜向后卷曲反折增厚形成</li>
+<li>内外侧脚</li>
+<li>腔隙韧带：腹股沟韧带内侧段的部分纤维向后下方转折增厚形成</li>
+<li>耻骨梳韧带（Cooper韧带）：腔隙韧带向外侧延续附着于耻骨梳的部分</li>
+</ul>
+</li>
+<li><strong>腹内斜肌、腹横肌及其形成物：</strong></li>
+<li>腹内斜肌<ul>
+<li>位于腹外斜肌的深面，起自于腹股沟韧带的外侧1/2或2/3和髂嵴及胸腰筋膜，肌纤维斜向上，后外侧肌纤维止于第10~12肋，其余在腹直肌外侧缘续行为腱膜，参与腹直肌鞘的构成，最后终止于白线</li>
+</ul>
+</li>
+<li>腹横肌<ul>
+<li>位于腹内斜肌深面，起自下位6对肋软骨的内面，胸腰筋膜，髂嵴和腹股沟韧带的外侧1/3</li>
+<li>肌纤维横行向内侧，于腹直肌外侧缘移行为腱膜，经腹直肌后面参与形成腹直肌鞘后层的组成，止于白线</li>
+</ul>
+</li>
+<li>形成物<ul>
+<li><strong>腹股沟镰</strong>，腹内斜肌和腹横肌的下缘呈弓形越过精索的上方，在腹直肌的外侧缘，精索的后方<strong>两者呈腱性结合形成腹股沟镰（联合腱）</strong>，止于耻骨结节附近</li>
+<li><strong>提睾肌</strong>，腹内斜肌和腹横肌下缘的部分纤维沿精索下行，<strong>延续为菲薄的提睪肌</strong>，包裹精索和睾丸</li>
+</ul>
+</li>
+</ul>
+<p><strong>做右下腹斜切口（麦氏切口）作阑尾切除术时，由浅入深经过哪些层次进入腹腔？</strong></p>
+<ul>
+<li>皮肤，浅筋膜、腹外斜肌腱膜、腹内斜肌、腹横肌、腹横筋膜、腹膜外筋膜、壁腹膜（不经过腹直肌鞘）</li>
+</ul>
+<p><strong>试述腹股沟管的位置、走行和二口四壁。</strong></p>
+<p>位置：位于腹股沟韧带内侧半的上方约1.5cm，由肌与腱膜形成的潜在性裂隙，长约4~5cm</p>
+<ul>
+<li><strong>两口</strong></li>
+<li>外口：浅环</li>
+<li>
+<p>内口：深环</p>
+</li>
+<li>
+<p><strong>四壁</strong></p>
+</li>
+<li>前壁：皮肤、皮下组织，<strong>腹外斜肌腱膜</strong></li>
+<li>后壁：<strong>腹横筋膜</strong>、内侧1/3有<strong>腹股沟镰</strong></li>
+<li>上壁：<strong>腹内斜肌和腹横肌的弓状下缘</strong></li>
+<li>下壁：<strong>腹股沟韧带</strong></li>
+</ul>
+<p><strong>腹股沟区的特点及其与腹股沟疝形成的关系，腹股沟斜疝与直疝的解剖学鉴别要点。</strong></p>
+<ul>
+<li>
+<p><strong>腹股沟区的境界</strong>：内侧界是腹直肌的外侧缘，上界是髂前上棘至腹直肌外侧缘的水平连线，下界为腹股沟韧带</p>
+</li>
+<li>
+<p><strong>腹股沟三角的境界</strong>：腹壁下动脉、腹直肌外侧缘、腹股沟韧带内侧半所围成的三角形区域，称为<strong>Hesselbach三角，直疝由此脱出</strong></p>
+</li>
+</ul>
+<p><img alt="image-20251114205056971" src="/images/image-20251114205056971.png" /></p>
+<p><img alt="image-20251114205240054" src="/images/image-20251114205240054.png" /></p>
+<p><strong>名词解释：腹直肌鞘、半环线（弓状线）、皮下环（浅环）、腹白线、腹环（深环）、腹股沟管、腹股沟三角、腹股沟镰（联合腱）</strong></p>
+<p><strong>腹直肌鞘</strong>：包裹腹直肌和锥状肌的纤维性鞘状结构，由腹前外侧壁三层扁肌的腱膜构成</p>
+<p><strong>半环线：</strong>腹直肌鞘后层在脐下约4-5cm处（通常平髂前上棘水平）形成的凸向上的弧形游离下缘，此线以下，腹直肌鞘后层消失，腹直肌直接紧贴腹横筋膜，使得此区域腹壁相对薄弱。</p>
+<p><strong>浅环：</strong> <strong>腹外斜肌腱膜</strong>在耻骨结节外上方形成的一个<strong>三角形裂隙。</strong></p>
+<p><strong>腹白线：</strong>位于腹前壁正中线上，由两侧腹外斜肌、腹内斜肌和腹横肌腱膜的<strong>纤维交织而成的纤维带</strong></p>
+<p><strong>深环</strong>：<strong>腹横筋膜在腹股沟韧带中点上方约一横指（1.5cm）处向外突出的一个卵圆形孔</strong>，是腹股沟管的内口。男性有精索（女性为子宫圆韧带）通过。腹股沟<strong>斜疝的疝囊即由此环进入腹股沟管</strong>。</p>
+<p><strong>腹股沟管：</strong>位于腹股沟韧带内侧半上方，<strong>由肌与腱膜构成的、长约4-5cm的潜在性裂隙</strong></p>
+<p><strong>腹股沟三角：</strong>腹前壁下部的一个三角形区域，此三角区腹壁相对薄弱，无肌纤维覆盖。<strong>腹股沟直疝</strong>即由此三角区向前突出，其疝囊位于腹壁下动脉的内侧。这是手术中鉴别直疝和斜疝（疝囊位于腹壁下动脉外侧）的关键解剖标志</p>
+<p><strong>联合腱：</strong> <strong>腹内斜肌腱膜和腹横肌腱膜在腹直肌外侧缘附近融合后，止于耻骨梳所形成的腱性结构</strong></p>
+<h2 id="_6">结肠上区</h2>
+<p><strong>网膜孔和网膜囊的境界及临床意义；</strong></p>
+<ul>
+<li><strong>网膜囊的境界</strong>：是小网膜和胃后壁与腹后壁的腹膜之间的一个扁窄间隙</li>
+<li><strong>前壁：小网膜，胃后壁的腹膜及胃结肠韧带</strong></li>
+<li><strong>后壁：横结肠及其系膜以及覆盖在胰、左肾、左肾上腺等处的腹膜</strong></li>
+<li><strong>上壁：肝尾状叶和膈下方的腹膜</strong></li>
+<li><strong>下壁：大网膜前后层愈着处</strong></li>
+<li><strong>左侧：脾、脾胃韧带、脾肾韧带</strong></li>
+<li><strong>右侧：借网膜孔通腹膜腔其余部分</strong></li>
+<li>胃后壁穿孔时，胃内容物会首先流入网膜囊，导致局限性炎症或脓肿，初期症状可能不典型，并能一定程度上限制胃、十二指肠穿孔等引起的感染扩散，急性胰腺炎的渗出液常聚集于网膜囊</li>
+</ul>
+<p><img alt="image-20251115180823235" src="/images/image-20251115180823235.png" /></p>
+<ul>
+<li><strong>网膜孔的境界（winslow孔，约平T12~L2的高度）</strong></li>
+<li>上界：肝尾状叶</li>
+<li>下界：十二指肠球</li>
+<li>前界：肝十二指肠韧带<ul>
+<li>其中有胆总管、肝固有动脉及淋巴管，可以用于<strong>止血及检查胆总管结石</strong></li>
+</ul>
+</li>
+<li>后界：覆盖在下腔静脉表面的腹膜</li>
+<li>手术中，外科医生可将食指伸入网膜孔，拇指放在肝十二指肠韧带前方，进行触摸探查，可用于判断胆总管结石、门静脉血栓等，当肝、十二指肠出血时，可用手指捏住肝十二指肠韧带（即压迫其中的肝动脉和门静脉）以暂时控制出血，<strong>也是感染扩散的通道</strong></li>
+</ul>
+<p><strong>膈下间隙（结肠上区）、结肠旁沟及肠系膜窦的位置、连通及其临床意义；</strong></p>
+<ul>
+<li><strong>结肠上区（又称膈下间隙</strong>），<strong>介于膈与横结肠之间</strong>，被肝分为肝上间隙和肝下间隙</li>
+<li>
+<p>肝上间隙借<strong>镰状韧带和左三角韧带</strong>分为：右肝上间隙（<strong>右肝上间隙</strong>是最大的膈下间隙），左肝上前间隙，左肝上后间隙</p>
+</li>
+<li>
+<p>肝下间隙以肝圆韧带分为右肝下间隙，左肝下间隙</p>
+<ul>
+<li>左肝下间隙又被<strong>小网膜和胃</strong>分为左肝下前间隙、<strong>左肝下后间隙（即网膜囊）</strong></li>
+<li><strong>右肝下间隙（肝肾隐窝）：</strong> 位于肝右叶下面与右肾、结肠右曲之间。<strong>这是平卧位时腹膜腔的最低点之一</strong>，积液易在此积聚</li>
+</ul>
+</li>
+<li>
+<p>网膜囊在生理状况下可以增加胃的活动度，感染积脓或胃后壁穿孔积液，开始时往往局限在网膜囊内，随着脓液的增多可<strong>经过网膜孔流入右肝下间隙（肝肾隐窝）</strong>，向上可扩展到右肝上间隙，向下可以沿右结肠旁沟至右髂窝，甚至达到盆腔的<strong>直肠膀胱陷凹或者直肠子宫陷凹</strong></p>
+<ul>
+<li>
+<p><strong>直肠子宫陷凹是直立时的最低处</strong>，可以通过穿刺观察血型腹膜腔积液判断是否有宫外孕</p>
+</li>
+<li>
+<p><strong>由于肝镰状韧带的有效分隔，右肝下间隙的脓液无法直接向上扩展到左肝上间隙</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mermaid">flowchart TD
+    A[网膜囊内脓液] --&gt; B{&quot;网膜孔&lt;br&gt;是否通畅?&quot;}
+    B -- 是 --&gt; C[&quot;&lt;b&gt;主要路径：经网膜孔&lt;/b&gt;&lt;br&gt;进入右肝下间隙&lt;br&gt;（肝肾隐窝）&quot;]
+    C --&gt; D[右结肠旁沟]
+    D --&gt; E[盆腔]
+
+    B -- 否/受阻 --&gt; F[&quot;&lt;b&gt;次要/局限路径&lt;/b&gt;&quot;]
+
+    F --&gt; G[&quot;向下: 经网膜囊下口&lt;br&gt;进入肠系膜窦与盆腔&quot;]
+    F --&gt; H[&quot;向左: 进入脾肾隐窝&lt;br&gt;进一步至左结肠旁沟&quot;]
+    F --&gt; I[&quot;向上: 积聚于网膜囊上隐窝&lt;br&gt;（肝尾状叶与膈之间）&quot;]
+    F --&gt; J[&quot;向后: 侵蚀胰腺被膜&lt;br&gt;进入腹膜后隙&quot;]
+</code></pre>
+<ul>
+<li><strong>结肠下区包括四个间隙</strong>：左右结肠旁沟及左右肠系膜窦</li>
+<li><strong>结肠旁沟</strong><ul>
+<li><strong>左结肠旁沟</strong>：降结肠与左侧腹壁之间的裂隙，<strong>由于膈结肠韧带的限制，不与结肠上区相通，但是向下通盆腔</strong></li>
+<li><strong>右结肠旁沟</strong>：升结肠和右侧腹壁之间的裂隙，<strong>向上通肝肾隐窝，向下经右髂窝通盆腔</strong></li>
+</ul>
+</li>
+<li><strong>肠系膜窦</strong><ul>
+<li><strong>左肠系膜窦</strong>：为<strong>肠系膜根与降结肠之间</strong>的斜方形间隙，<strong>向下通盆腔</strong></li>
+<li><strong>右肠系膜窦</strong>：为<strong>肠系膜根与升结肠之间</strong>的三角形间隙，下方有回肠末端相隔，<strong>几乎封闭</strong>，容易形成局限性腹膜炎</li>
+</ul>
+</li>
+</ul>
+<p><img alt="image-20251115184850535" src="/images/image-20251115184850535.png" /></p>
+<p><strong>试述胃的位置、毗邻及血供；</strong></p>
+<ul>
+<li>位置：中等充盈时，大部分位于左季肋区，小部分位于腹上区</li>
+<li>毗邻</li>
+<li><strong>胃前壁</strong><ul>
+<li><strong>右侧</strong>：左半肝</li>
+<li><strong>左侧：</strong>上部：膈；下部：腹前壁，此部移动度大，称为<strong>胃前壁的游离区</strong></li>
+</ul>
+</li>
+<li><strong>胃后壁</strong>：隔网膜囊与<strong>胰、左肾上腺、左肾、脾、横结肠及其系膜</strong>相邻，这些器官共同形成<strong>胃床</strong></li>
+<li><strong>血供</strong></li>
+<li><strong>动脉</strong>（小弯动脉弓、大弯动脉弓）<ul>
+<li>胃左动脉：起自腹腔干</li>
+<li>胃右动脉：起自肝固有动脉</li>
+<li>胃网膜右动脉：起自胃十二指肠动脉</li>
+<li>胃网膜左动脉：起自脾动脉末端</li>
+<li>胃短动脉和胃后动脉</li>
+</ul>
+</li>
+<li><strong>静脉</strong>（均汇入肝门静脉系统）<ul>
+<li>胃右静脉：汇入注入肝门静脉</li>
+<li>胃左静脉：汇入肝门静脉或脾静脉</li>
+<li>胃网膜右静脉：汇入肠系膜上静脉</li>
+<li>胃网膜左静脉：汇入脾静脉</li>
+<li>胃短静脉：汇入脾静脉</li>
+<li>胃后静脉：汇入脾静脉</li>
+</ul>
+</li>
+</ul>
+<p><img alt="image-20251114214033116" src="/images/image-20251114214033116.png" /></p>
+<p><strong>胃后壁穿孔时，胃内容物可通过什么结构到达何部位？</strong></p>
+<pre><code class="language-mermaid">flowchart TD
+    A[&quot;胃后壁穿孔&quot;] --&gt; B[&quot;&lt;b&gt;首先进入&lt;/b&gt;&lt;br&gt;网膜囊&quot;]
+
+    B --&gt; C{&quot;网膜孔是否通畅?&quot;}
+
+    C -- 是 --&gt; D[&quot;&lt;b&gt;主要路径&lt;/b&gt;&lt;br&gt;经网膜孔溢出&quot;]
+    D --&gt; E[&quot;进入右肝下间隙&lt;br&gt;（肝肾隐窝）&quot;]
+    E --&gt; F[&quot;沿右结肠旁沟&lt;br&gt;向下流动&quot;]
+    F --&gt; G[&quot;到达盆腔&quot;]
+
+    C -- 否/受阻 --&gt; H[&quot;&lt;b&gt;局限或另寻路径&lt;/b&gt;&quot;]
+    H --&gt; I[&quot;局限于网膜囊内&lt;br&gt;形成脓肿&quot;]
+    H --&gt; J[&quot;向下: 进入肠系膜窦与盆腔&quot;]
+    H --&gt; K[&quot;向左: 进入脾肾隐窝&quot;]
+</code></pre>
+<p><strong>十二指肠的分段及各段毗邻；</strong></p>
+<ul>
+<li><strong>上部</strong>：长约4~5cm，形成十二指肠上曲，<strong>上部近侧段黏膜面平坦无皱襞，称为十二指肠球</strong></li>
+<li>
+<p>毗邻</p>
+<ul>
+<li>前上方：肝方叶和胆囊</li>
+<li>下方：胰头和胰颈</li>
+<li>后方：胆总管、胃十二指肠动脉、肝门静脉及下腔静脉</li>
+</ul>
+</li>
+<li>
+<p><strong>降部</strong>：长约7~8cm，形成十二指肠下曲，降部后内侧壁上有<strong>十二指肠大乳头和小乳头，分别胃肝胰壶腹和副胰管的开口</strong></p>
+</li>
+<li>
+<p>毗邻</p>
+<ul>
+<li>前方：被横结肠及其系膜分为上下两段，分别与肝右前叶及小肠袢相邻</li>
+<li>后方：右肾门，右肾血管及右输尿管相邻</li>
+<li>内侧：紧邻胰头，胰管及胆总管</li>
+<li>外侧：有结肠右曲</li>
+</ul>
+</li>
+<li>
+<p><strong>水平部</strong>：长约10~12cm</p>
+</li>
+<li>
+<p>毗邻</p>
+<ul>
+<li>
+<p>上方：胰头及钩突</p>
+</li>
+<li>
+<p>后方：有右输尿管、下腔静脉和腹主动脉</p>
+</li>
+<li>
+<p>前方：右侧与小肠袢相邻，左侧有肠系膜上动静脉</p>
+</li>
+<li><strong>十二指肠上动脉压迫综合征（Wilkie综合征）</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>升部</strong>：长约2~3cm，形成十二指肠空肠曲</p>
+</li>
+<li>
+<p>毗邻</p>
+<ul>
+<li>左侧：十二指肠上襞（十二指肠空肠襞）</li>
+<li>右侧：毗邻胰头与腹主动脉</li>
+</ul>
+</li>
+</ul>
+<p><strong>十二指肠悬韧带</strong>：十二指肠悬肌由肌纤维和结缔组织构成，从十二指肠空肠曲上面向上连至右膈脚。十二指肠悬肌与包绕其表面的腹膜皱襞共同构成<strong>十二指肠悬韧带</strong>或<strong>Treitz韧带</strong>，是寻找空肠起始部位的标识，起上提和固定十二指肠空肠曲的作用</p>
+<p><img alt="image-20251114215404502" src="/images/image-20251114215404502.png" /></p>
+<p><strong>十二指肠的血供</strong></p>
+<ul>
+<li>
+<p>十二指肠血液供应主要来自<strong>胰十二指肠上、下动脉</strong></p>
+</li>
+<li>
+<p><strong>胰十二指肠上动脉</strong>起于<strong>胃十二指肠动脉</strong>，分为胰十二指肠上前、后动脉</p>
+</li>
+<li>
+<p><strong>胰十二指肠下动脉</strong>起于<strong>肠系膜上动脉</strong>，分为胰十二指肠下前、后动脉</p>
+</li>
+<li>
+<p><strong>静脉</strong>：与相应动脉伴行，除了<strong>胰十二指肠上后静脉直接汇入肝门静脉</strong>以外，其余均汇入肠系膜上静脉</p>
+</li>
+</ul>
+<p><strong>肝的位置与毗邻，肝门与肝蒂；</strong></p>
+<ul>
+<li>大部分位于右季肋区，小部分位于左季肋区，左右肋弓之间的部分与腹前壁相贴</li>
+<li>毗邻</li>
+<li>肝右叶<ul>
+<li>膈面：借膈与右肋膈隐窝、右肺底相邻</li>
+<li>脏面：前部结肠右曲，中部十二指肠上曲，后部右肾、右肾上腺</li>
+</ul>
+</li>
+<li>肝左叶<ul>
+<li>脏面：胃前壁</li>
+<li>后上方：食管腹部</li>
+</ul>
+</li>
+<li><strong>肝门</strong>：肝脏面中部的横沟，出入的结构有肝左右管，肝门静脉左右支和肝固有动脉左右支，淋巴管及神经等</li>
+<li><strong>第二肝门</strong>：在膈面腔静脉沟的上部，<strong>肝左、中、右静脉</strong>出肝处</li>
+<li><strong>第三肝门</strong>：在腔静脉沟下部，<strong>肝右后下静脉和尾状叶静脉</strong>出肝处</li>
+<li><strong>肝蒂</strong>：<strong>出入肝的结构被结缔组织包绕，走行于肝十二指肠韧带内</strong>，在韧带内胆总管位于肝门静脉的右前方、肝固有动脉的右侧</li>
+</ul>
+<p><strong>胆囊三角的构成及内容，胆总管的分段、毗邻和临床意义；</strong></p>
+<ul>
+<li><strong>胆囊三角（Calot三角）由胆囊管、肝总管和肝下面三者组成</strong>，内常有胆囊动脉通过。</li>
+</ul>
+<p><strong>肝外胆道与胆囊</strong></p>
+<ul>
+<li>肝外胆道由肝左、右管、肝总管、胆囊和胆总管组成</li>
+<li>胆囊借疏松结缔组织附着与肝脏面的胆囊窝内，其下面覆有腹膜</li>
+<li>胆囊颈起始部膨大，<strong>形成Hartmann囊，胆囊结石多停留在此囊中</strong></li>
+<li>胆囊底的体表投影：右锁骨中线或腹直肌外缘与右肋弓的交点</li>
+</ul>
+<p><strong>胰的分部与毗邻，患胰头癌时可压迫哪些结构，引起哪些症状？</strong></p>
+<ul>
+<li>胰腺是一个位于腹膜后隙的狭长腺体，通常分为头、颈、体、尾四部分，<strong>除胰尾外均属于腹膜外位</strong></li>
+<li><strong>胰头：</strong>位于胰腺右端，被十二指肠呈“C”形环绕和固定<ul>
+<li>前面：横结肠系膜通过，并与空肠相毗邻</li>
+<li>后面：下腔静脉，右肾静脉及胆总管下行</li>
+</ul>
+</li>
+<li><strong>胰颈</strong>：胰头与胰体之间较狭窄的部分<ul>
+<li>前面：邻接胃幽门</li>
+<li>后面：有肠系膜上静脉通过，并与脾静脉汇合为肝门静脉</li>
+</ul>
+</li>
+<li><strong>胰体</strong>：位于L1平面，脊柱前方，并稍向前凸起<ul>
+<li>前面：隔网膜囊与胃后壁相邻</li>
+<li>后面：有腹主动脉、左肾上腺、左肾及脾静脉</li>
+<li>上缘：与腹腔干、腹腔丛相邻</li>
+</ul>
+</li>
+<li>
+<p><strong>胰尾</strong>：胰左端的狭细部分，末端达脾门，<strong>行经脾肾韧带的两层腹膜之间，固有一定的移动性</strong></p>
+</li>
+<li>
+<p><strong>胰头癌可引起的症状</strong></p>
+</li>
+<li><strong>进行性无痛性黄疸</strong>：胆总管下端行走于胰头后部，并被其包绕。肿瘤压迫胆总管，导致<strong>胆汁排出受阻</strong></li>
+<li><strong>梗阻、消化不良</strong>：压迫十二指肠</li>
+<li><strong>门静脉高压</strong>：肿瘤压迫门静脉或其属支，导致门静脉系统血液回流受阻</li>
+<li><strong>下肢水肿、腹壁静脉曲张</strong>：压迫下腔静脉</li>
+<li><strong>剧烈且顽固的腰背部疼痛</strong>：胰腺后方的腹腔神经丛受肿瘤浸润</li>
+</ul>
+<p><img alt="image-20251115194240036" src="/images/image-20251115194240036.png" /></p>
+<p><img alt="image-20251114221541287" src="/images/image-20251114221541287.png" /></p>
+<p><strong>名词解释：网膜孔、胃床、肝十二指肠韧带、肝胰壶腹、Oddi括约肌</strong></p>
+<p><strong>网膜孔：</strong>又称Winslow孔，是<strong>网膜囊</strong>（小腹膜腔）与腹膜腔其余部分（大腹膜腔）相通的<strong>唯一通道</strong></p>
+<p><strong>胃床</strong>：指胃后壁<strong>隔网膜囊</strong>与之相邻的器官和结构的总称，<strong>包括：胰、左肾、左肾上腺、横结肠及其系膜、脾</strong></p>
+<p><strong>肝十二指肠韧带：</strong>是<strong>小网膜</strong>的右侧部分，连接肝门与十二指肠上部，呈游离状态，其右缘构成<strong>网膜孔的前界</strong></p>
+<p><strong>肝胰壶腹：</strong>又称<strong>Vater壶腹</strong>，是<strong>胆总管末端与胰管末端汇合后，在十二指肠降部后内侧壁膨大形成的共同通道。</strong></p>
+<p><strong>Oddi括约肌：</strong>环绕在<strong>肝胰壶腹</strong>周围以及<strong>胆总管末端</strong>和<strong>胰管末端</strong>的复杂括约肌束</p>
+<h2 id="_7">结肠下区</h2>
+<p><strong>肠系膜及其形成的结构</strong></p>
+<ul>
+<li>双层腹膜构成，呈扇形</li>
+<li><strong>肠系膜根</strong></li>
+<li>从L2左侧斜向右下，至右骶髂关节的前方，长约15cm</li>
+<li>跨过：十二指肠水平部，腹主动脉，下腔静脉，右输尿管，右腰大肌</li>
+<li><strong>系膜三角：</strong>系膜缘处的肠壁与两层腹膜围成三角形的腔隙</li>
+</ul>
+<p><strong>空肠和回肠形态的比较</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>空肠</th>
+<th>回肠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>位置</td>
+<td>近侧2/5，位于结肠下区左上部</td>
+<td>远侧3/5，位于结肠下区右下部</td>
+</tr>
+<tr>
+<td>管径</td>
+<td>较粗</td>
+<td>较细</td>
+</tr>
+<tr>
+<td>管壁</td>
+<td>较厚</td>
+<td>较薄</td>
+</tr>
+<tr>
+<td>环状襞</td>
+<td>多而高</td>
+<td>疏而低</td>
+</tr>
+<tr>
+<td>淋巴滤泡</td>
+<td>孤立淋巴滤泡</td>
+<td>集合淋巴滤泡、孤立淋巴滤泡</td>
+</tr>
+<tr>
+<td>血管弓</td>
+<td>少，1~2弓，脂肪少</td>
+<td>多，3~4级弓，脂肪多</td>
+</tr>
+<tr>
+<td>颜色</td>
+<td>较红</td>
+<td>较淡</td>
+</tr>
+</tbody>
+</table>
+<p><strong>盲肠形态结构特征；回盲瓣的位置及其临床意义；</strong></p>
+<ul>
+<li>长约6~7cm，位于右髂窝内，作为大肠的起始部，盲肠以膨大的盲端开始，上部延续于升结肠，左侧接回肠末端，后内侧壁有阑尾附着，右侧为右结肠旁沟，后面有右髂腰肌和股外侧皮神经，前面邻腹前壁，并常被大网膜覆盖，为<strong>腹膜内位器官，活动度小</strong></li>
+<li><strong>回盲瓣：盲肠左后壁上回肠的开口处，黏膜形成两个半月形皱襞</strong></li>
+<li>上瓣膜位于回肠和结肠交界处，呈水平位</li>
+<li>下瓣膜更长，更凹陷，位于回肠和盲肠连接处</li>
+<li>
+<p><strong>可以控制回肠内容物流入大肠的速度，防止大肠内容物逆流</strong></p>
+</li>
+<li>
+<p><strong>回盲部</strong>：<strong>盲肠、回肠末端和阑尾的合称</strong></p>
+</li>
+<li>由于回肠的管径小于盲肠，二者的<strong>连接处接近直角</strong>，<strong>回盲部的肠套叠多见</strong></li>
+</ul>
+<p><strong>阑尾常见位置及其毗邻关系，阑尾根部的体表投影和寻找阑尾的方法；</strong></p>
+<ul>
+<li>
+<p><strong>回肠前位</strong>，约28%，<strong>盆位</strong>，约26%，<strong>盲肠后位</strong>：24%</p>
+</li>
+<li>
+<p>长约6~8cm，直径约0.5~0.6cm，为蚓状突起，在回盲瓣的下2~3cm处开口于盲肠的内面，属于<strong>腹膜内位器官</strong></p>
+</li>
+<li>
+<p><strong>阑尾血供</strong></p>
+</li>
+<li>
+<p>回结肠动脉分支的阑尾动脉，为<strong>终末动脉</strong>，血运异常时容易导致阑尾坏疽和穿孔</p>
+</li>
+<li>
+<p>阑尾静脉与同名静脉伴行，经过回结肠静脉汇入肠系膜上静脉，最终汇入肝门静脉，阑尾炎症时，<strong>细菌栓子可以脱落引起肝门静脉炎</strong></p>
+</li>
+<li>
+<p><strong>体表投影</strong></p>
+</li>
+<li>
+<p><strong>McBurney点</strong>：脐至右髂前上棘连线的中、外1/3交界处</p>
+</li>
+<li>
+<p><strong>Lanz点</strong>：左、右髂前上棘连线的中、右1/3交界处</p>
+</li>
+<li>
+<p><strong>阑尾系膜</strong>是一个将阑尾连接至回肠末段肠系膜的小三角形腹膜皱襞</p>
+</li>
+<li>
+<p>盲肠表面有<strong>三条结肠带</strong>（结肠系膜带、网膜带、独立带），向下汇聚于阑尾根部，是手术中寻找阑尾的重要标志</p>
+</li>
+</ul>
+<p><strong>肝门静脉的组成及其主要属支；肝门静脉系统的解剖学特点；吻合部位在门静脉高压症时的临床意义。</strong></p>
+<ul>
+<li><strong>在L2高度，由肠系膜上静脉和脾静脉汇合而成</strong></li>
+</ul>
+<p><img alt="image-20251114234804212" src="/images/image-20251114234804212.png" /></p>
+<p><img alt="image-20251114235110894" src="/images/image-20251114235110894.png" /></p>
+<p><strong>腹膜后隙的概念及结构特点；</strong></p>
+<ul>
+<li>
+<p>位于腹后壁，介于壁腹膜和腹内筋膜之间，上界为膈，经过腰肋三角与后纵隔相通，下至骶骨岬，与盆腔腹膜后隙相通，两侧向外延为腹前外侧壁的腹膜外筋膜</p>
+</li>
+<li>
+<p>该间隙向上经过腰肋三角通后纵隔，下至盆腔的腹膜后隙相续，因此腹膜后隙的感染可以向上或者向下蔓延</p>
+</li>
+<li>腹膜后隙的器官手术，多采用腰腹部斜切口入路</li>
+</ul>
+<p><strong>肾的位置、被膜、毗邻关系及肾门结构的排列关系；</strong></p>
+<ul>
+<li>肾为腹膜外位器官，帖附于脊柱两侧的腹后壁</li>
+<li><strong>右肾</strong>上端平<strong>第12胸椎体上缘</strong>，下端平<strong>第3腰椎体上缘</strong></li>
+<li><strong>左肾</strong>上端平<strong>第11胸椎体下缘</strong>，下端平<strong>第2腰椎体下缘</strong>，右肾位置低于左肾约1~2cm<ul>
+<li>第12肋斜过左肾后面的中部，右肾后面的上部</li>
+</ul>
+</li>
+</ul>
+<p><img alt="image-20251115201445693" src="/images/image-20251115201445693.png" /></p>
+<ul>
+<li><strong>被膜：（由外向内）</strong></li>
+<li><strong>肾筋膜（Gerota筋膜）</strong>：<strong>位于脂肪囊的外面，分为前后两层，包被肾上腺和肾</strong><ul>
+<li>肾前筋膜：前层为肾前筋膜，覆盖在肾、肾上腺及其血管的前面，并越过腹主动脉和下腔静脉的前面，与对侧的肾筋膜前层相接</li>
+<li>肾后筋膜：覆盖在肾及肾上腺的后面</li>
+<li>在肾下方并不愈合，与直肠后隙相通</li>
+</ul>
+</li>
+<li><strong>脂肪囊（肾床）</strong>：位于肾筋膜的深面，囊状脂肪组织层</li>
+<li><strong>纤维囊（肾纤维囊）</strong>：是肾的固有被膜，由致密结缔组织和弹性纤维构成，薄而坚韧<ul>
+<li>正常时，包裹于肾实质的表面，容易剥离</li>
+<li>病理状态下，与肾实质粘连，不易剥离</li>
+<li>在肾破裂或行肾部分切除术时，应该缝合此膜</li>
+</ul>
+</li>
+<li><strong>毗邻⭐️</strong></li>
+<li>上方：<strong>肾上腺</strong></li>
+<li>内后方：<strong>腰交感干</strong></li>
+<li>内下方：<strong>肾盂和输尿管</strong></li>
+<li>内侧<ul>
+<li>左肾：<strong>腹主动脉</strong></li>
+<li>右肾：<strong>十二指肠降部和下腔静脉</strong></li>
+</ul>
+</li>
+<li>
+<p>前面</p>
+<ul>
+<li>左肾：上部邻<strong>胃后壁</strong>；中部邻<strong>胰尾、脾血管</strong>；下部邻<strong>空肠</strong></li>
+<li>右肾：上部邻<strong>肝右叶</strong>；下部邻<strong>结肠右曲</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>肾门：</strong>为肾内侧缘中部的凹陷处，有肾血管、肾盂、淋巴管、神经通过</p>
+</li>
+<li><strong>肾蒂</strong>：出入肾门的血管、肾盂、神经和淋巴管等结构为结缔组织所包裹的称为肾蒂</li>
+<li>由前向后：肾静脉、肾动脉、肾盂</li>
+<li>由上而下：肾动脉，肾静脉，肾盂</li>
+</ul>
+<p><strong>输尿管毗邻及狭窄部位位置；</strong></p>
+<ul>
+<li>
+<p><strong>毗邻</strong></p>
+</li>
+<li>
+<p><strong>右输尿管：</strong></p>
+<ul>
+<li><strong>前方</strong>：十二指肠降部、升结肠血管、回结肠血管，右睾丸血管或卵巢血管及回肠末段</li>
+<li><strong>右侧</strong>：盲肠和阑尾</li>
+</ul>
+</li>
+<li>
+<p><strong>左输尿管</strong>：</p>
+<ul>
+<li>前方：十二指肠空肠曲，降结肠血管及左睾丸血管或卵巢血管，乙状结肠</li>
+</ul>
+</li>
+<li>
+<p><strong>输尿管的狭窄</strong></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">狭窄顺序</th>
+<th style="text-align: left;">名称</th>
+<th style="text-align: left;">位置特点</th>
+<th style="text-align: left;">临床重要性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>第一狭窄</strong></td>
+<td style="text-align: left;"><strong>肾盂输尿管连接部</strong></td>
+<td style="text-align: left;">输尿管起始端</td>
+<td style="text-align: left;">结石下行时第一个可能卡住的关卡</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第二狭窄</strong></td>
+<td style="text-align: left;"><strong>输尿管跨髂血管处</strong></td>
+<td style="text-align: left;">骨盆入口，跨越髂总动脉前方</td>
+<td style="text-align: left;">因血管压迫而形成的狭窄</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第三狭窄</strong></td>
+<td style="text-align: left;"><strong>输尿管壁内段</strong></td>
+<td style="text-align: left;"><strong>膀胱壁内斜行部分</strong></td>
+<td style="text-align: left;"><strong>最狭窄，是结石最易嵌顿的部位</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>肾上腺位置、毗邻和供血特点；</strong></p>
+<ul>
+<li>
+<p>位置：位于脊柱两侧，<strong>平T11</strong>高度紧贴肾上端，与肾共同包在肾筋膜内</p>
+</li>
+<li>
+<p><strong>左右肾上腺的毗邻不同：</strong></p>
+</li>
+<li>
+<p><strong>左肾上腺</strong>前面以网膜囊与胃后壁相邻，下部与胰尾、脾血管相邻，内侧缘紧邻腹主动脉</p>
+</li>
+<li>
+<p><strong>右肾上腺</strong>前面为肝右叶，前面的上部与肝裸区相邻，内侧缘紧邻下腔静脉</p>
+</li>
+<li>
+<p><strong>两肾后面：【第</strong> <strong>12</strong> <strong>肋以上】与膈、胸膜腔相邻；【第</strong> <strong>12</strong> <strong>肋以下】</strong>（内）<strong>腰大肌、生殖股神经、</strong></p>
+<p><strong>腰方肌、髂腹下神经、髂腹股沟神经</strong>（外）</p>
+</li>
+<li>
+<p><strong>血供</strong></p>
+</li>
+<li>
+<p><strong>动脉</strong></p>
+<ul>
+<li>肾上腺上动脉：起自膈下动脉</li>
+<li>肾上腺中动脉：起自腹主动脉</li>
+<li>肾上腺下动脉：起自肾动脉</li>
+</ul>
+</li>
+<li><strong>静脉</strong><ul>
+<li><strong>左肾上腺静脉：汇入左肾静脉</strong></li>
+<li><strong>右肾上腺静脉：汇入下腔静脉</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>腹主动脉的行程、毗邻及主要的分支；</strong></p>
+<ul>
+<li>为腹主动脉的延续，在<strong>第12胸椎</strong>下缘穿膈的主动脉裂孔进入腹膜后隙，<strong>腹主动脉在腰椎左前方下降，至第4腰椎下缘水平分为左、右髂总动脉</strong></li>
+<li>毗邻：</li>
+<li>前面：肝左叶，网膜囊，胰，十二指肠水平部和小肠系膜根和小肠袢，左肾静脉、脾静脉、腹腔丛和主动脉丛</li>
+<li>后面：第1~4腰椎及椎间盘，第2~4左腰静脉</li>
+<li>右侧：下腔静脉，上部还有右膈脚，右内脏大神经，乳糜池和胸导管起始部</li>
+<li>左侧：左交感干腰部，肠系膜下动脉</li>
+</ul>
+<p><strong>腰交感干组成和行程；乳糜池位置及收集范围；</strong></p>
+<ul>
+<li>
+<p><strong>腰交感干</strong></p>
+</li>
+<li>
+<p>由<strong>4~5对腰交感神经节和连于其间的节间支组成</strong></p>
+</li>
+<li>
+<p>位置：腰椎体的前外侧，腰大肌的内侧缘</p>
+</li>
+<li>
+<p><strong>乳糜池</strong>：是胸导管起始部的膨大</p>
+</li>
+<li>位置：<strong>位于腹膜后隙，第1腰椎体的前方和腹主动脉的右后方</strong></li>
+<li>接受<strong>肠干和左、右腰干</strong>，除了运输淋巴以外，尚运输来自<strong>消化管吸收的乳糜</strong></li>
+</ul>
+<p><strong>肠系膜下动脉的分支</strong></p>
+<pre><code class="language-mermaid">flowchart TD
+    A[&quot;肠系膜下动脉&lt;br&gt;（第3腰椎水平发起）&quot;] --&gt; B[&quot;左结肠动脉&quot;]
+    A --&gt; C[&quot;乙状结肠动脉&lt;br&gt;（通常2-4支）&quot;]
+    A --&gt; D[&quot;直肠上动脉&lt;br&gt;（终末支）&quot;]
+
+    B --&gt; B1[&quot;升支：与中结肠动脉吻合&lt;br&gt;供应降结肠上份/结肠脾曲&quot;]
+    B --&gt; B2[&quot;降支：与乙状结肠动脉吻合&lt;br&gt;供应降结肠下份&quot;]
+
+    C --&gt; C1[&quot;形成血管弓&lt;br&gt;供应乙状结肠&quot;]
+
+    D --&gt; D1[&quot;供应直肠上部&quot;]
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
